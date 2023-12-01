@@ -4,54 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="home.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <nav class="flex justify-between">
-        <div id="logo&name" class="flex justify-center items-center">
+        <div id="logo&name" class="flex justify-center items-center gap-4">
             <div>
-                <img src="images/logo.png" alt="">
+                <img src="images/logo.png" alt="" width="30" height="30">
             </div>
 
             <div>
-                <h2 class="text-[#519341]">FinditReunite</h2>
+                <h2 class="text-[#519341] text-[1.4rem]">FinditReunite</h2>
             </div>
         </div>
         
         <div class="flex gap-4 justify-center items-center">
            <div>
-             <button class="px-6 py-4 bg-[#519341] rounded-md text-white font-semibold flex gap-2">
+             <button class="px-6 py-2 bg-[#519341] rounded-md text-white font-semibold flex gap-2">
                 <iconify-icon icon="fontisto:unlocked" style="color: white;" width="20" height="20"></iconify-icon>
                 <p>Sign In</p>
              </button>
            </div>
+
            <div>
-            <iconify-icon icon="tabler:menu-deep" width="50" height="50" class="md:hidden"></iconify-icon>
+            <iconify-icon icon="tabler:menu-deep" width="30" height="30" class="md:hidden"></iconify-icon>
            </div>
         </div>
     </nav>
 
     <section id="hero">
-        <header>
-            <div>
-             <h1>
+        <header class="flex flex-col justify-center items-center py-6 gap-4">
+            <div class="">
+             <h1 class="text-[2rem] text-[#519341] font-bold flex justify-center items-center">
                  FinditReunite
              </h1>
-             <p>
+             <p class="flex justify-center items-center text-gray-500 font-medium pb-2">
                  "Where lost meets found, stories reunite."
              </p>
             </div>
-            <div class="bg-red-400">
-             <input type="text" placeholder="Search...">
+            <div>
+             <input type="text" placeholder="Search..."  class=" border-2 border-black rounded-md">
              <button type="submit"><i class="fa fa-search"></i></button>
             </div>
          </header>
      
-         <div id="" class="bg-yellow-600 h-[80vh] w-[100%]" >
+         <div id="slider" class="bg-yellow-600 h-[45vh] w-[100%]" >
              <div>
-               5 seconds  slider
+              <p class="text-white text-[2.4rem] opacity-80  flex justify-center items center">
+                5 seconds  slider
+              </p>
              </div>
-             <div class="grid grid-cols-3  "></div>
+         </div>
+
+         <div class="grid grid-cols-2 md:grid-cols-3 bg-black gap-4">
+            <div class="w-full h-[40vh] bg-red-600">
+                <div class="border bg-white h-1/2 flex flex-col justify-center items-center">
+                    <div>
+                        <iconify-icon icon="fa-brands:searchengin" width="60" height="60"></iconify-icon>
+                    </div>
+                    <div>
+                        <p class="capitalize text-[1.2rem] font-medium text-gray-400">find an item</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-[40vh] bg-yellow-600">
+                <div class="flex flex-col justify-center items-center" >
+                    <div>
+                        <iconify-icon icon="clarity:note-solid"  width="60" height="60"></iconify-icon>
+                    </div>
+                    <div class="capitalize text-[1.2rem] font-medium text-gray-400">
+                        <p>report a lost or found item</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-[40vh] bg-blue-600 col-span-2 md:col-span-1">
+                <div>
+                    <iconify-icon icon="vaadin:handshake" width="40" height="40"></iconify-icon>
+                </div>
+                <div>
+                    <p>
+                        find
+                    </p>
+                </div>
+            </div>
          </div>
     </section>
 </body>
