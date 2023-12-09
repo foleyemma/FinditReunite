@@ -32,7 +32,7 @@
                         <iconify-icon icon="mdi:gmail" width="50" height="50"></iconify-icon>
                     </div>
                     <div class="relative bottom-8">
-                        <p class="font-medium tracking-wide text-[1.1rem] text-[#f1910e]">follyemma03@gmail.com</p>
+                        <a href="follyemma03@gmail.com"><p class="font-medium tracking-wide text-[1.1rem] text-[#f1910e]">follyemma03@gmail.com</p></a>
                     </div>
                 </div>
             </div>
@@ -50,20 +50,122 @@
         </div>
     </section>
 
-    <section>
-        <header>
-            <h2>get in touch</h2>
-        </header>
+    <section class="px-6 ml-2 w-full lg:flex lg:flex-col lg:items-center lg:justify-center  py-14">
+       <div class="bg-white lg:w-[70%] flex flex-col items-center justify-center pl-6  lg:pl-0  drop-shadow-lg py-10 ">
+          <header>
+            <h2 class="text-[1.6rem] font-semibold py-4 text-center capitalize text-[#555555] ">get in touch</h2>
+          </header>
 
-        <div>
-            <form action="" method="post">
-                <div class="flex flex-col">
-                    <label for="name" class="">name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" class="focus:outline-none focus:border-blue-500 border border-gray-300">
+          <div class="w-full lg:flex lg:flex-col lg:items-center lg:justify-center   ">
+            <form action="" method="post" class="flex flex-col lg:w-[70%]  gap-6">
+                <div class="flex flex-col ">
+                    <label for="name" class="text-[1rem] px-2 text-gray-600 font-medium">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" 
+                    class="focus:outline-none focus:border-blue-500 border focus:border-2 border-gray-500 py-2 w-[90%] lg:w-full rounded-2xl px-4">
                 </div>
+
+                <div class="flex flex-col ">
+                    <label for="email" class="text-[1rem] px-2 text-gray-600 font-medium">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" 
+                    class="focus:outline-none focus:border-blue-500 border focus:border-2 border-gray-500 py-2 w-[90%] lg:w-full rounded-2xl px-4">
+                </div>
+
+                <div class="flex flex-col ">
+                    <label for="message" class="text-[1rem] px-2 text-gray-600 font-medium">Message</label>
+                    <input type="text" id="message" name="message" placeholder="Leave a message" 
+                    class="focus:outline-none focus:border-blue-500 border focus:border-2 border-gray-500 py-2 w-[90%] lg:w-full pb-16 rounded-2xl px-4">
+                </div>
+
+                <div>
+                    <button type="submit" class="py-2 px-10 border bg-[#519341] hover:shadow-inner text-white text-[1.1rem] shadow-lg hover:drop-shadow-lg font-semibold hover:font-bold hover:bg-opacity-80 rounded-lg">Send</button>
+                </div>
+                
             </form>
-        </div>
+          </div>
+          
+       </div>
+         <!-- <div class=" flex justify-center items-center"> -->
+            <hr class="border w-full  lg:w-[70%] mt-12  border-[#555555]"> 
+         </div>
+
+       <div>
+        <h3 class="text-[1.6rem] py-4 text-center capitalize text-[#555555] py-4 ">social media</h3>
+        <ul class="flex gap-6 justify-center items-center pt-6">
+            <li><a href=""></a><iconify-icon icon="logos:facebook" width="45" height="45"></iconify-icon></li>
+            <li><a href=""></a><a href=""></a><iconify-icon icon="fa6-brands:square-x-twitter" style="color: rgb(19, 18, 18);" width="45" height="45"></iconify-icon></iconify-icon></li>
+            <li><a href=""></a><iconify-icon icon="skill-icons:instagram" width="45" height="45"></iconify-icon></li>
+            <li><a href=""></a><iconify-icon icon="fa6-brands:square-whatsapp" style="color: #25d366;" width="45" height="45"></iconify-icon></li>
+        </ul>
+       </div>
     </section>
+
+    <footer class="bg-[#519341] text-white w-[100%]  py-12 lg:h-[60vh]">
+        <div class="flex flex-col lg:flex-row justify-around px-12 lg:px-0 gap-6">
+            <div>
+                <h3 class="font-semibold text-[1.1rem] capitalize">company</h3>
+                <ul class="capitalize font-light flex flex-col gap-2">
+                    <li><a href="aboutus.html">about us</a></li>
+                    <li><a href="contactus.html">contact us</a></li>
+                    <li><a href="">disclamer</a></li>
+                    <li><a href="">donate</a></li>
+                    <li><a href="">how it works</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-[1.1rem] capitalize">resources</h3>
+                <ul class="capitalize font-light flex flex-col gap-2">
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">blog</a></li>
+                    <li><a href="">terms</a></li>
+                    <li><a href="">privacy policy</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-[1.1rem] capitalize">quick links</h3>
+                <ul class="capitalize font-light flex flex-col gap-2">
+                    <li><a href="">log in</a></li>
+                    <li><a href="">sign in</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">search</a></li>
+                    <li><a href="">report lost</a></li>
+                    <li><a href="">report found</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <div>
+                    <h2 class="font-bold text-[1.5rem]">FinditReunite</h2>
+                    <p class="py-2">Subscribe to our Newsletter</p>
+                    <form action="" method="post">
+                        <input type="email" name="Newsletter" id="Newsletter" placeholder="Your Email" class="text-black px-4 py-2 rounded-md">
+                        <button type="submit" class="bg-[#f1910e] px-4 py-2 rounded-md ml-[-10px]">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex lg:flex-row flex-col gap-6 lg:gap-0 jusify-center items-center justify-around lg:mt-12 lg:pb-2 py-12 lg:py-0">
+        
+                <hr class="border-2 rounded-full lg:w-[25%] w-[50%] bg-black">
+            
+           <div class="flex gap-4">
+             <div>
+                <p>@FinditReunite .LTD 2023 Built by Foley</p>
+             </div>
+             <div>
+                <ul class="flex gap-2 justify-center items-center">
+                    <li><a href=""></a><iconify-icon icon="logos:facebook" width="30" height="30"></iconify-icon></li>
+                    <li><a href=""></a><iconify-icon icon="fa6-brands:square-x-twitter" style="color: black;" width="30" height="30"></iconify-icon></iconify-icon></li>
+                    <li><a href=""></a><iconify-icon icon="skill-icons:instagram" width="30" height="30"></iconify-icon></li>
+                </ul>
+             </div>
+           </div>
+
+           <hr class="border-2 rounded-full lg:w-[25%] w-[50%] bg-black">
+        </div>
+    </footer>
 </body>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </html>
