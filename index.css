@@ -4,22 +4,54 @@
     background-repeat: no-repeat;
 }
 #slider-img-2{
-    background-image: url(images/sample_slider.jpg);
+    background-image: url(images/img-slider-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 #slider-img-3{
-    background-image: url(images/sample_slider.jpg);
+    background-image: url(images/img-slider-3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+} 
+
+
+.animate-move-left {
+  animation: moveLeft is 1s linear forwards;
+ }
+
+@keyframes moveleft {
+  0% {
+   transform: translateX(0);
+  }
+
+  100% {
+   transform: translateX(-200%);
+  }
+}
+
+
+
+
+@keyframes moveright {
+       0% {
+        transform: translateX(0);
+       }
+
+       100% {
+        transform: translateX(200%);
+       }
+}
+
+.animate-move-right {
+  animation: moveRight is 1s linear forwards;
 }
 #slider-img-4{
-    background-image: url(images/sample_slider.jpg);
+    background-image: url(images/img-slider-4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 #slider-img-5{
-    background-image: url(images/sample_slider.jpg);
+    background-image: url(images/img-slider-5.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -36,7 +68,7 @@
 }
 
 #post-1{
-    background-image: url(images/addidas-bag.jpg);
+    background-image: url(images/Adidas-bag.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
