@@ -1,3 +1,15 @@
+/* Initial state without background */
+nav {
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Class to show background when scrolling down */
+.show-background {
+  background-color: rgba(255, 255, 255, 0.9); /* Set your desired background color */
+  backdrop-filter: blur(10px); /* Optional: Apply a backdrop filter for a blur effect */
+}
+
+
 #slider-img-1{
     background-image: url(images/sample_slider.jpg);
     background-size: cover;
@@ -15,7 +27,7 @@
 } 
 
 
-.animate-move-left {
+/* .animate-move-left {
   animation: moveLeft is 1s linear forwards;
  }
 
@@ -40,11 +52,16 @@
        100% {
         transform: translateX(200%);
        }
+} */
+
+
+.animate-move-left {
+  transition: transform 1s ease-in-out;
 }
 
-.animate-move-right {
+/* .animate-move-right {
   animation: moveRight is 1s linear forwards;
-}
+} */
 #slider-img-4{
     background-image: url(images/img-slider-4.jpg);
     background-size: cover;

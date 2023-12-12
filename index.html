@@ -12,7 +12,7 @@
     
 </head>
 <body class="bg-[#F1F1F1]">
-    <nav class="flex justify-between  lg:justify-around items-center justify-center px-6 lg:px-0">
+    <nav class="w-full fixed flex justify-between show-background  lg:justify-around items-center justify-center px-6 lg:px-0">
         <div id="logo&name" class="flex justify-center items-center gap-4">
             <div>
                 <img src="images/logo.png" alt="" width="35" height="35">
@@ -25,7 +25,7 @@
         </div>
         
         <div class="flex gap-4 justify-center items-center">
-           <div class="flex gap-4 justify-center items-center md:hidden">
+           <div class="flex gap-4 justify-center items-center lg:hidden">
             <div>
                 <iconify-icon icon="line-md:person-add-filled" style="color: #f1910e;" width="30" height="30"></iconify-icon>
              </div>
@@ -43,10 +43,10 @@
 
         <div id="nav-menu" class="hidden lg:block ">
           <div class="flex justify-between items-center gap-20">
-            <div class="flex justify-center items-center ">
-                <ul class="flex gap-6 capitalize items-center justify-center">
+            <div class="flex justify-center items-center">
+                <ul class="flex flex-col md:flex-row  gap-6 capitalize items-center justify-center">
                     <li class="py-4 hover:border-b-4 hover:font-semibold "><a href="index.html">home</a></li>
-                    <li><a href="">report lost</a></li>
+                    <li><a href="lost.html">report lost</a></li>
                     <li><a href="">report found</a></li>
                     <li><a href="">about us</a></li>
                     <li><a href="contactus.html">contact us</a></li>
@@ -84,13 +84,13 @@
          </header>
      
          <div id="slider" class="">
-            <div id="slider-img" class="h-[60vh] md:h-[75vh] lg:h-[95vh] w-[100%] animate-move-left">
+            <div id="slider-img" class="h-[60vh] md:h-[75vh] lg:h-[95vh] w-[100%] flex overflow-hidden animate-move-left">
                 <div id="slider-img-1" class="w-full h-full animate-move-left">
                     <p class="text-white text-[2.4rem] opacity-80  flex justify-center items center">
                      5 seconds  slider
                     </p>
                   </div>
-                   <div id="slider-img-2" class="w-full h-full hidden ">
+                   <div id="slider-img-2" class="w-full h-full hidden animate-move-left ">
                    <p class="text-white text-[2.4rem] opacity-80  flex justify-center items center">
                      5 seconds  slider
                    </p>
@@ -197,7 +197,7 @@
                             <iconify-icon icon="mingcute:location-2-fill" style="color: #519341;" height="20" width="20"  ></iconify-icon>
                             <p class="font-medium text-gray-400" >Ibadan</p>
                         </div>
-                        <div class="flex gap-2  flex justify-between justify-center items-center">
+                        <div class="flex gap-2 justify-between justify-center items-center">
                             <iconify-icon icon="mingcute:time-fill" style="color: #519341;" height="20" width="20"></iconify-icon>
                             <p  class="font-medium text-gray-400">30 mins ago</p>
                         </div>
@@ -251,7 +251,7 @@
                         </h3>
                     </div>
 
-                    <div class="flex gap-2 py-4 flex items-center">
+                    <div class="flex gap-2 py-4 items-center">
                         <iconify-icon icon="bxs:category-alt" style="color: #519341;" width="20" height="20"></iconify-icon>
                         <p  class="font-medium text-gray-400">Bags/Backpack</p>
                     </div>
@@ -261,7 +261,7 @@
                             <iconify-icon icon="mingcute:location-2-fill" style="color: #519341;" height="20" width="20"  ></iconify-icon>
                             <p class="font-medium text-gray-400" >Ibadan</p>
                         </div>
-                        <div class="flex gap-2  flex justify-between justify-center items-center">
+                        <div class="flex gap-2 justify-between justify-center items-center">
                             <iconify-icon icon="mingcute:time-fill" style="color: #519341;" height="20" width="20"></iconify-icon>
                             <p  class="font-medium text-gray-400">30 mins ago</p>
                         </div>
