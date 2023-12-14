@@ -17,8 +17,8 @@
                 <ul class="capitalize  text-white flex lg:flex-col lg:gap-16">
                     <li class="text-[1.35rem] font-semibold">where</li>
                     <li class="text-[1.35rem] text-gray-200 font-semibold">what</li>
-                    <li class="text-[1.35rem] text-gray-200 font-semibold">your information</li>
-                    <li class="text-[1.35rem] text-gray-200 font-semibold">submit info</li>
+                    <li class="text-[1.35rem] text-gray-200 font-semibold">who</li>
+                    <li class="text-[1.35rem] text-gray-200 font-semibold">submit</li>
                 </ul>
             </div>
             <div>
@@ -31,151 +31,184 @@
             </div>
         </div>
 
-        <div class="lg:w-[54%]  border px-10 py-6 bg-white">
-            <div class="flex justify-between pb-8">
-                <h2 class="font-semibold  text-[1.25rem] text-gray-700">Where did you lose your item?</h2>
-                
-                <p class="font-light capitalize">progress 1/4</p>
-            </div>
-            <form action="" method="post" >
-                <label for="state"  class=" capitalize font-medium text-[1.1rem] mx-6">state</label>
-                <select name="state" id="" class="px-4 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6 capitalize flex gap-6">
-                    <option value="" class="font-semibold  text-gray-400">select state</option>
-                    <option value="">abia</option>
-                    <option value="5">adamawa</option>
-                    <option value="">akwa-ibom</option>
-                    <option value="">anambra</option>
-                    <option value="">bauchi</option>
-                    <option value="">bayelsa</option>
-                    <option value="">benue</option>
-                    <option value="">borno</option>
-                    <option value="">cross river</option>
-                    <option value="">delta</option>
-                    <option value="">ebonyi</option>
-                    <option value="">edo</option>
-                    <option value="">ekiti</option>
-                    <option value="">enugu</option>
-                    <option value="">FCT</option>
-                    <option value="">gombe</option>
-                    <option value="">imo</option>
-                    <option value="">jigawa</option>
-                    <option value="">kaduna</option>
-                    <option value="">kano</option>
-                    <option value="">katsina</option>
-                    <option value="">kebbi</option>
-                    <option value="">kogi</option>
-                    <option value="">kwara</option>
-                    <option value="">lagos</option>
-                    <option value="">nasarawa</option>
-                    <option value="">niger</option>
-                    <option value="">ogun</option>
-                    <option value="">ondo</option>
-                    <option value="">osun</option>
-                    <option value="">oyo</option>
-                    <option value="">plateau</option>
-                    <option value="">rivers</option>
-                    <option value="">sokoto</option>
-                    <option value="">taraba</option>
-                    <option value="">yobe</option>
-                    <option value="">zamfara</option>
-                </select>
-
-                <label for="city"  class="py-4 capitalize font-medium text-[1.1rem] mx-6">city</label>
-                <select name="city" id="" class="px-4 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6 capitalize">
-                    <option value="" class="font-semibold text-gray-400">select city</option>
-                    <option value="">abia</option>
-                    <option value="5">adamawa</option>
-                    <option value="">akwa-ibom</option>
-                    <option value="">anambra</option>
-                    <option value="">bauchi</option>
-                    <option value="">bayelsa</option>
-                    <option value="">benue</option>
-                    <option value="">borno</option>
-                    <option value="">cross river</option>
-                </select>
-                
-                <label for="address"  class="py-4 capitalize font-medium text-[1.1rem] mx-6 ">address</label>
-                <input type="text" placeholder="Enter Address"  name="address" id="address" class="px-4 pb-8 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6 capitalize">
-                <label for="details"  class="py-4 font-semibold text-[0.9rem] mx-6 ">Please, indicate all details that you can remember about the place this item was lost</label>
-                <input type="text" placeholder=""  name="details" id="details" class="px-4 pb-16 pt-2 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] mx-6 capitalize">
-            </form>
-
-            <form action="" method="post" class="hidden">
-                <div class="flex justify-between">
-                 <div class="flex flex-col">
-                    <label for="report title"  class="py capitalize font-semibold text-[1.1rem] mx-6 ">report title</label>
-                    <input type="text" placeholder=""  name="details" id="details" class="px-4  py-2 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[130%]  mx-6 capitalize">   
-                  </div>
-                 <div class="flex flex-col mr-10">
-                    <label for="report title"  class="capitalize font-semibold text-[1.1rem]">date</label>
-                    <input type="date" placeholder=""  name="details" id="details" class="px-4 py-2 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none capitalize">
-                 </div>
+        <div id="the-form" class="lg:w-[54%]  border px-10 py-6 bg-white">
+            
+            <div id="where">
+                <div class="flex justify-between pb-8">
+                    <h2 class="font-semibold  text-[1.25rem] text-gray-700">Where did you lose your item?</h2> 
+                    <p class="font-light capitalize">progress 1/4</p>
                 </div>
                 
-                <div class="flex justify-between">
-                <div class="flex flex-col">
-                    <label for="category"  class=" capitalize font-medium text-[1.1rem] mx-6">category</label>
-                    <select name="category" id="" class="w-[130%] px-4 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none py-2 mx-6 capitalize flex gap-6">
-                        <option value="" class="font-semibold  text-gray-400">select category</option>
-                        <option value="">phone</option>
-                        <option value="5">pet</option>
-                        <option value="">bags</option>
-                        <option value="">documents</option>
-                        <option value="">keys</option>
-                        <option value="">laptops</option>
-                        <option value="">watches</option>
-                        <option value="">jewelries</option>
-                        <option value="">books</option>
-                        <option value="">clothes & accessories</option>
-                        <option value="">cash</option>
-                        <option value="">equipments</option>
+                <form action="" method="post" >
+                    <label for="state"  class=" capitalize font-medium text-[1.1rem] mx-6">state</label>
+                    <select name="state" id="" class="px-4 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6 capitalize flex gap-6">
+                        <option value="" class="font-semibold  text-gray-400">select state</option>
+                        <option value="">abia</option>
+                        <option value="5">adamawa</option>
+                        <option value="">akwa-ibom</option>
+                        <option value="">anambra</option>
+                        <option value="">bauchi</option>
+                        <option value="">bayelsa</option>
+                        <option value="">benue</option>
+                        <option value="">borno</option>
+                        <option value="">cross river</option>
+                        <option value="">delta</option>
+                        <option value="">ebonyi</option>
+                        <option value="">edo</option>
+                        <option value="">ekiti</option>
+                        <option value="">enugu</option>
+                        <option value="">FCT</option>
+                        <option value="">gombe</option>
+                        <option value="">imo</option>
+                        <option value="">jigawa</option>
+                        <option value="">kaduna</option>
+                        <option value="">kano</option>
+                        <option value="">katsina</option>
+                        <option value="">kebbi</option>
+                        <option value="">kogi</option>
+                        <option value="">kwara</option>
+                        <option value="">lagos</option>
+                        <option value="">nasarawa</option>
+                        <option value="">niger</option>
+                        <option value="">ogun</option>
+                        <option value="">ondo</option>
+                        <option value="">osun</option>
+                        <option value="">oyo</option>
+                        <option value="">plateau</option>
+                        <option value="">rivers</option>
+                        <option value="">sokoto</option>
+                        <option value="">taraba</option>
+                        <option value="">yobe</option>
+                        <option value="">zamfara</option>
                     </select>
-                </div>
-
-                <div class="flex flex-col mr-10">
-                    <label for="brand"  class=" capitalize font-medium text-[1.1rem] mx-6">brand</label>
-                <select name="brand" id="" class="px-4 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6 capitalize flex gap-6">
-                    <option value="" class="font-semibold  text-gray-400">select brand</option>
-                    <option value="">iphone</option>
-                    <option value="5">samsung</option>
-                    <option value="">redmi</option>
-                    <option value="">ifinix</option>
-                    <option value="">tecno</option>
-                    <option value="">oppo</option>
-                    <option value="">hauwei</option>
-                    <option value="">gionee</option>
-                    <option value="">nokia</option>
-                    <option value="">itel</option>
-                    <option value="">others</option>
-                </select>
-                </div>
-                </div>
-
-                <div class="flex flex-col">
-                    <label for="upload"  class=" capitalize font-medium text-[1.1rem] mx-6">upload image</label>
-               <input type="file" src="" name="upload"  class="px-4 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6 capitalize flex gap-6">>
-                </div>
-
-                  <div>
-                <label for="address"  class="py-4 capitalize font-medium text-[1.1rem] mx-6">description</label>
-                <input type="text" placeholder="Enter detailed description of the item"  name="address" id="address" class="px-4 pb-16 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6">
-                  </div>
-                
-            </form>
-            <div class="mx-6 mt-4">
-                <button type="" class="px-6 py-3 text-white outline-none capitalize font-medium focus:border-2 focus:border-[#834193] hover:bg-[#f1910e] rounded-md bg-[#519341]">next</button>
+                    
+                    <label for="city"  class="py-4 capitalize font-medium text-[1.1rem] mx-6">city</label>
+                    <select name="city" id="" class="px-4 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6 capitalize">
+                        <option value="" class="font-semibold text-gray-400">select city</option>
+                        <option value="">ado-awaye</option>
+                        <option value="5">akanran</option>
+                        <option value="">egbeda</option>
+                        <option value="">eruwa</option>
+                        <option value="">fiditi</option>
+                        <option value="">ibadan</option>
+                        <option value="">idi ayunre</option>
+                        <option value="">ilora</option>
+                        <option value="">iseyin</option>
+                        <option value="">ogbomosho</option>
+                        <option value="">saki</option>
+                    </select>
+                    
+                    <label for="address"  class="py-4 capitalize font-medium text-[1.1rem] mx-6 ">address</label>
+                    <input type="text" placeholder="Enter Address"  name="address" id="address" class="px-4 pb-8 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6 capitalize">
+                    
+                    <label for="details"  class="py-4 font-semibold text-[0.9rem] mx-6 ">Please, indicate all details that you can remember about the place this item was lost</label>
+                    <input type="text" placeholder=""  name="details" id="details" class="px-4 pb-16 pt-2 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] mx-6 capitalize">
+                </form>
             </div>
-
-            <form action="" method="post">
-                <label for="reporter-name" class="py-4 capitalize font-medium text-[1.1rem] mx-6 ">reporter's name</label>
-                <input type="text" name="reporter-name" id="reporter-name" placeholder="Enter your name"  class="px-4 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6">
+            
+            <div id="what" class="hidden">
+                <div class="flex justify-between pb-8">
+                    <h2 class="font-semibold  text-[1.25rem] text-gray-700">What did you lose?</h2>
+                    <p class="font-light capitalize">progress 2/4</p>
+                </div>
                 
-                <label for="email" class="py-4 capitalize font-medium text-[1.1rem] mx-6 ">email</label>
-                <input type="text" name="email" id="email" placeholder="Enter your name"  class="px-4 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6">
-            </form>
+                <form action="" method="post" >
+                    <div class="flex justify-between">
+                        <div class="flex flex-col">
+                            <label for="report title"  class="py capitalize font-semibold text-[1.1rem] mx-6 ">report title</label>
+                            <input type="text" placeholder=""  name="details" id="details" class="px-4  py-2 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[130%]  mx-6 capitalize">   
+                        </div>
+                        
+                        <div class="flex flex-col mr-10">
+                            <label for="report title"  class="capitalize font-semibold text-[1.1rem]">date</label>
+                            <input type="date" placeholder=""  name="details" id="details" class="px-4 py-2 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none capitalize">
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between">
+                        <div class="flex flex-col">
+                            <label for="category"  class=" capitalize font-medium text-[1.1rem] mx-6">category</label>
+                            <select name="category" id="" class="w-[130%] px-4 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none py-2 mx-6 capitalize flex gap-6">
+                            <option value="" class="font-semibold  text-gray-400">select category</option>
+                            <option value="">phone</option>
+                            <option value="5">pet</option>
+                            <option value="">bags</option>
+                            <option value="">documents</option>
+                            <option value="">keys</option>
+                            <option value="">laptops</option>
+                            <option value="">watches</option>
+                            <option value="">jewelries</option>
+                            <option value="">books</option>
+                            <option value="">clothes & accessories</option>
+                            <option value="">cash</option>
+                            <option value="">equipments</option>
+                        </select>
+                    </div>
+                    
+                    <div class="flex flex-col mr-10">
+                        <label for="brand"  class=" capitalize font-medium text-[1.1rem] mx-6">brand</label>
+                        <select name="brand" id="" class="px-4 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6 capitalize flex gap-6">
+                        <option value="" class="font-semibold  text-gray-400">select brand</option>
+                        <option value="">iphone</option>
+                        <option value="5">samsung</option>
+                        <option value="">redmi</option>
+                        <option value="">ifinix</option>
+                        <option value="">tecno</option>
+                        <option value="">oppo</option>
+                        <option value="">hauwei</option>
+                        <option value="">gionee</option>
+                        <option value="">nokia</option>
+                        <option value="">itel</option>
+                        <option value="">others</option>
+                    </select>
+                    </div>
+                </div>
+                
+                    <div class="flex flex-col">
+                        <label for="upload"  class=" capitalize font-medium text-[1.1rem] mx-6">upload image</label>
+                        <input type="file" src="" name="upload"  class="px-4 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6 capitalize flex gap-6">
+                    </div>
+                
+                    <div>
+                        <label for="address"  class="py-4 capitalize font-medium text-[1.1rem] mx-6">description</label>
+                        <input type="text" placeholder="Enter detailed description of the item"  name="address" id="address" class="px-4 pb-16 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6">
+                    </div>
+                </form>
+            </div>
+            
+            <div id="who" class="hidden">
+                <div class="flex justify-between pb-8">
+                    <h2 class="font-semibold  text-[1.25rem] text-gray-700">Who is reporting?</h2>
+                    <p class="font-light capitalize">progress 3/4</p>
+                </div>
+                
+                <form action="" method="post">
+                    <label for="reporter-name" class="py-4 capitalize font-medium text-[1.1rem] mx-6 ">reporter's name</label>
+                    <input type="text" name="reporter-name" id="reporter-name" placeholder="Enter your name"  class="px-4 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6">
+                    
+                    <label for="email" class="py-4 capitalize font-medium text-[1.1rem] mx-6 ">email</label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email"  class="px-4 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6">
+                    
+                    <label for="phone" class="py-4 capitalize font-medium text-[1.1rem] mx-6 ">phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Phone number"  class="px-4 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6">
+                    
+                    <label for="address" class="py-4 capitalize font-medium text-[1.1rem] ml-6 ">address</label> <span>(optional)</span>
+                    <input type="text" name="address" id="" placeholder="Home or Work address"  class="px-4 pb-8 mt-2 mb-4 rounded-md focus:bg-[#dfffd7] focus:border-[#834193] border focus:border-2 outline-none w-[90%] py-2 mx-6">
+                </form>
+            </div>
+            
+            <div id="prev & next" class="flex gap-5 mx-6">
+                <div id="prev" class="mt-4 hidden">
+                    <button type="" class="px-6 py-3 text-[#519341] outline-none capitalize font-medium focus:border-2 focus:border-[#834193] hover:bg- hover:bg-[#dfffd7] rounded-md border-2 border-[#519341]">back</button>
+                </div>
+                
+                <div id="next" class="mt-4">
+                    <button type="" class="px-6 py-3 text-white outline-none capitalize font-medium focus:border-2 focus:border-[#834193] hover:bg-[#f1910e] rounded-md bg-[#519341]">next</button>
+                </div>
+            </div>
         </div>
-        
-       
     </section>
+
 </body>
+<script src="javascript/lost.js"></script>
 </html>

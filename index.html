@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,157 +12,178 @@
     
 </head>
 <body class="bg-[#F1F1F1]">
-    <nav class="w-full fixed flex justify-between show-background  lg:justify-around items-center justify-center px-6 lg:px-0">
-        <div id="logo&name" class="flex justify-center items-center gap-4">
-            <div>
-                <img src="images/logo.png" alt="" width="35" height="35">
+    <header>
+        <nav class="w-full drop-shadow-lg fixed flex justify-between show-background py-3 lg:justify-around items-center px-6 lg:px-0">
+            <div id="logo&name" class="flex justify-center items-center gap-4">
+                <div>
+                    <img src="images/logo.png" alt="" width="35" height="35">
+                </div>
+                <div>
+                    <h2 class="text-[#519341] text-[1.4rem] font-semibold">FinditReunite</h2>
+                    <p id="subtitle" class="uppercase text-light tracking-widest text-gray-500">a lost and found company</p>
+                </div>
             </div>
+            
+            <div class="flex gap-4 justify-center items-center">
+                <div class="flex gap-4 justify-center items-center lg:hidden">
+                    <div>
+                        <iconify-icon icon="line-md:person-add-filled" style="color: #f1910e;" width="30" height="30"></iconify-icon>
+                    </div>
+                    <div>
+                        <iconify-icon icon="fontisto:unlocked" style="color: rgb(73, 73, 73);" width="20" height="20"></iconify-icon>
+                    </div>
+                </div>
+                <div id="nav-toggler">
+                    <iconify-icon id="show-menu" icon="tabler:menu-deep"  style="color: rgb(73, 73, 73);" width="30" height="30" class="md:hidden"></iconify-icon>
+                    <iconify-icon id="hide-menu" icon="ph:x-bold" style="color: red;" width="30" height="30" class="hidden"></iconify-icon>
+                </div>
+            </div>
+            
+            <div id="nav-menu" class="hidden lg:block ">
+                <div class="flex justify-between items-center gap-20">
+                    <div class="flex justify-center items-center">
+                        <ul class="flex gap-6 capitalize items-center justify-center">
+                            <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold font-semibold "><a href="index.html">home</a></li>
+                            <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="lost.html">report lost</a></li>
+                            <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">report found</a></li>
+                            <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">about us</a></li>
+                            <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="contactus.html">contact us</a></li>
+                            <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">blog</a></li>
+                        </ul>
+                </div>
+                
+                <div class="flex justify-center items-center gap-4  text-[1rem] ">
+                    <a href="sign-in.html">
+                        <button class="py-2 px-6 rounded-md border-2  font-medium hover:border-[#f1910e] border-[#519341] text-[#519341] bg-[#dfffd7] ">log in</button>
+                    </a>
+                    
+                    <a href="sign-up.html">
+                        <button class="py-2 px-6 rounded-md bg-[#f1910e] hover:bg-[#519341] capitalize  shadow-md text-white font-medium">sign up</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-            <div>
-                <h2 class="text-[#519341] text-[1.4rem] font-semibold">FinditReunite</h2>
-                <p id="subtitle" class="uppercase text-light tracking-widest text-gray-500">a lost and found company</p>
+    <div id="nav-drop" class="w-full hidden bg-white bg-opacity-60 lg:hidden fixed top-20 py-4 mb-7 backdrop-blur-lg">
+        <div class="flex justify-center items-center ">
+            <ul class="flex flex-col gap-6 capitalize items-center justify-center">
+                <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold font-semibold "><a href="index.html">home</a></li>
+                <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="lost.html">report lost</a></li>
+                <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">report found</a></li>
+                <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">saved ads</a></li>
+                <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">post an ad</a></li>
+                <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">about us</a></li>
+                <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="contactus.html">contact us</a></li>
+                <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">blog</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<section id="hero" class="py-28">
+    <head class="flex flex-col justify-center items-center gap-4">
+        <div id="banner" class="">
+            <h1 class="text-[2.2rem] text-[#519341] font-bold flex justify-center items-center">FinditReunite</h1>
+            
+            <p  id="motto-1" class="flex justify-center items-center text-gray-600 font-medium pb-4 uppercase text-[1rem]">
+                "Where lost meets found, stories reunite.
+            </p>
+        </div>
+        
+        <div class="pb-4 flex justify-center items-center">
+            <input type="text" placeholder="Search..."  class="py-2 px-4 rounded-full outline-[#834193] focus:bg-[#dfffd7]">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </head>
+    
+    <div id="slider" class="">
+        <div id="slider-img" class="h-[60vh] md:h-[75vh] lg:h-[95vh] w-[100%] flex overflow-hidden ">
+            <div id="slider-img-1" class="w-full h-full animate-move-left">
+                <p class="text-white text-[2.4rem] opacity-80  flex justify-center items center">
+                    5 seconds  slider
+                </p>
+            </div>
+            
+            <div id="slider-img-2" class="w-full h-full hidden animate-move-left ">
+                <p class="text-white text-[2.4rem] opacity-80  flex justify-center items center">
+                    5 seconds  slider
+                </p>
+            </div>
+            
+            <div id="slider-img-3" class="w-full h-full hidden">
+                <p class="text-[1.4rem] lg:text-[2.2rem] opacity-90 font-semibold px-16 pt-14">
+                    Where in the crowd will you find that bag?
+                </p>
+                <p class="text-[1.2rem] lg:text-[1.8rem] opacity-90 font-semibold px-16 py-4 ">
+                    click here to find out more about FinditReunite software for venues
+                </p>
+            </div>
+            
+            <div id="slider-img-4" class="w-full h-full hidden">
+                <p class="text-white text-[2.4rem] opacity-80  flex justify-center items center">
+                    5 seconds  slider
+                </p>
+            </div>
+            
+            <div id="slider-img-5" class="w-full h-full hidden">
+                <p class="text-white text-[2.4rem] opacity-80  flex justify-center items center">
+                    5 seconds  slider
+                </p>
             </div>
         </div>
         
-        <div class="flex gap-4 justify-center items-center">
-           <div class="flex gap-4 justify-center items-center lg:hidden">
-            <div>
-                <iconify-icon icon="line-md:person-add-filled" style="color: #f1910e;" width="30" height="30"></iconify-icon>
-             </div>
-
-             <div>
-                <iconify-icon icon="fontisto:unlocked" style="color: rgb(73, 73, 73);" width="20" height="20"></iconify-icon>
-             </div>
-             
-           </div>
-
-           <div>
-            <iconify-icon icon="tabler:menu-deep"  style="color: rgb(73, 73, 73);" width="30" height="30" class="md:hidden"></iconify-icon>
-           </div>
+        <div id="slider-button" class="flex justify-between relative bottom-72">
+            <div id="prev-button" class="flex justify-center items-center w-28 h-28 rounded-full hover:backdrop-blur-sm">
+                <iconify-icon icon="material-symbols:arrow-back-ios-rounded" width="50" height="50" class=" text-center text-[#F1F1F1] text-opacity-50"></iconify-icon>
+            </div>
+            <div id="next-button" class="flex items-center justify-center w-28 h-28 rounded-full hover:backdrop-blur-sm">
+                <iconify-icon icon="ic:round-arrow-forward-ios" width="50" height="50" class="text-[#F1F1F1] text-opacity-50"></iconify-icon>
+            </div>
         </div>
-
-        <div id="nav-menu" class="hidden lg:block ">
-          <div class="flex justify-between items-center gap-20">
-            <div class="flex justify-center items-center">
-                <ul class="flex flex-col md:flex-row  gap-6 capitalize items-center justify-center">
-                    <li class="py-4 hover:border-b-4 hover:font-semibold "><a href="index.html">home</a></li>
-                    <li><a href="lost.html">report lost</a></li>
-                    <li><a href="">report found</a></li>
-                    <li><a href="">about us</a></li>
-                    <li><a href="contactus.html">contact us</a></li>
-                    <li><a href="">blog</a></li>
-                </ul>
-            </div>
-
-            <div class="flex justify-center items-center gap-4  text-[1rem] ">
-                <a href="">
-                    <button class="py-2 px-6 rounded-md border-2  font-medium border-[#834193] text-gray-600 bg-[#519341] bg-opacity-20">log in</button>
-                </a>
-
-                <a href="">
-                    <button class="py-2 px-6 rounded-md bg-[#f1910e] capitalize  shadow-md text-white font-medium">sign in</button>
-                </a>
-            </div>
-          </div>
-        </div>
-    </nav>
-
-    <section id="hero" class="py-12">
-        <header class="flex flex-col justify-center items-center py-6 gap-4">
-            <div class="">
-             <h1 class="text-[2.2rem] text-[#519341] font-bold flex justify-center items-center">
-                 FinditReunite
-             </h1>
-             <p  id="motto-1" class="flex justify-center items-center text-gray-600 font-medium pb-4 uppercase text-[1rem]">
-                 "Where lost meets found, stories reunite."
-             </p>
-            </div>
-            <div class="pb-4">
-             <input type="text" placeholder="Search..."  class="py-2 px-4 rounded-full">
-             <button type="submit"><i class="fa fa-search"></i></button>
-            </div>
-         </header>
-     
-         <div id="slider" class="">
-            <div id="slider-img" class="h-[60vh] md:h-[75vh] lg:h-[95vh] w-[100%] flex overflow-hidden animate-move-left">
-                <div id="slider-img-1" class="w-full h-full animate-move-left">
-                    <p class="text-white text-[2.4rem] opacity-80  flex justify-center items center">
-                     5 seconds  slider
-                    </p>
-                  </div>
-                   <div id="slider-img-2" class="w-full h-full hidden animate-move-left ">
-                   <p class="text-white text-[2.4rem] opacity-80  flex justify-center items center">
-                     5 seconds  slider
-                   </p>
-                  </div>
-     
-                  <div id="slider-img-3" class="w-full h-full hidden">
-                   <p class="text-white text-[2.4rem] opacity-80  flex justify-center items center">
-                     5 seconds  slider
-                   </p>
-                   </div>
-     
-                  <div id="slider-img-4" class="w-full h-full hidden">
-                   <p class="text-white text-[2.4rem] opacity-80  flex justify-center items center">
-                     5 seconds  slider
-                   </p>
-                  </div>
-     
-                  <div id="slider-img-5" class="w-full h-full hidden">
-                   <p class="text-white text-[2.4rem] opacity-80  flex justify-center items center">
-                     5 seconds  slider
-                   </p>
-                  </div>
-                  
-            </div>
-             <div class="flex justify-between place-content-center relative ">
-                <div id="prev-button" class="flex items-center justify-center w-16 h-16 rounded-full   bg-white">
-                    <iconify-icon icon="ep:back"></iconify-icon>
-                 </div>
+    </div>
     
-                 <div id="next-button" class="flex items-center justify-center w-16 h-16   rounded-full bg-white">
-                   <iconify-icon icon="ic:baseline-forward"></iconify-icon>
-                 </div>
-             </div>
-         </div>
-
-         <div class="grid grid-cols-2 md:grid-cols-3  gap-4 px-10  lg:pl-16 py-8 ">
-            <div id="find-item" class="w-full lg:w-[80%] h-[30vh] flex justify-center items-center">
-                <div class="border bg-white h-full flex flex-col justify-center items-center rounded-md shadow-md w-full">
-                    <div>
+    <div class="grid grid-cols-2 md:grid-cols-3  gap-4 px-10  lg:pl-16 py-8 lg:ml-8">
+        <div id="find-item" class="w-full lg:w-[80%] h-[30vh] flex justify-center items-center">
+            <div class="border bg-white h-full flex flex-col justify-center items-center rounded-md shadow-md w-full hover:bg-[#dfffd7]">
+                    <div class="transition ease-in-out delay-75  hover:-translate-y-3 hover:scale-125 duration-700">
                         <iconify-icon icon="bxs:search-alt-2" style="color: rgb(85, 85, 85);" width="60" height="60"></iconify-icon>
                     </div>
                     <div>
-                        <p class="capitalize text-[1.3rem]   text-gray-400">find an item</p>
+                        <p class="text-[1.3rem] text-gray-500">Find an Item</p>
                     </div>
-                </div>
             </div>
-            <div class="w-full lg:w-[80%] h-[30vh] flex justify-center items-center">
-                <div class=" border bg-white flex flex-col justify-center items-center h-full w-full rounded-md shadow-md" >
-                    <div>
+        </div>
+        
+        <div id="report" class="w-full lg:w-[80%] h-[30vh] flex justify-center items-center">
+            <div class=" border bg-white flex flex-col justify-center items-center h-full w-full rounded-md shadow-md hover:bg-[#dfffd7] " >
+                <a href="step-by-step.html" class="">
+                    <div class=" flex justify-center items-center transition ease-in-out delay-75  hover:-translate-y-3 hover:scale-125 duration-700">
                         <iconify-icon icon="clarity:note-solid" style="color: rgb(85, 85, 85);"  width="60" height="60"></iconify-icon>
                     </div>
-                    <div class="capitalize text-[1.3rem] text-gray-400 text-center">
-                        <p>report a lost or found item</p>
+                    <div class="text-[1.3rem] text-gray-500 text-center hover:font-semibold">
+                        <p>Report a Lost or Found Item</p>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="w-full lg:w-[80%] h-[30vh] col-span-2 md:col-span-1 flex justify-center">
-               <div  class=" border bg-white h-full flex flex-col justify-center items-center w-[50%] md:w-full  rounded-md shadow-md " >
-                <div>
+        </div>
+        
+        <div class="w-full lg:w-[80%] h-[30vh] col-span-2 md:col-span-1 flex justify-center">
+            <div  class=" border bg-white h-full flex flex-col justify-center items-center w-[50%] md:w-full  rounded-md shadow-md hover:bg-[#dfffd7] " >
+                <div class="transition ease-in-out delay-75  hover:-translate-y-3 hover:scale-125 duration-700">
                     <iconify-icon icon="vaadin:handshake" style="color: rgb(85, 85, 85);" width="60" height="60"></iconify-icon>
                 </div>
-                <div class="capitalize text-[1.3rem] text-gray-400 text-center">
+
+                <div class=" text-[1.3rem] text-gray-500 text-center hover:font-semibold">
                     <p>
-                        find the rightful owner
+                        Find the Rightful owner
                     </p>
                 </div>
-               </div>
             </div>
-         </div>
-    </section>
+        </div>
+    </div>
+</section>
 
-    <section id="recent post" class="">
+<section id="recent post" class="">
         <div class="px-10 lg:px-16 pb-4">
             <h2 class="font-bold text-[1.75rem] capitalize">
                 recent posts
@@ -171,38 +192,37 @@
         </div>
 
         <div class=" h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-10 ">
-            <div class="w-full h-[100vh] rounded-md p-4 shadow-lg bg-white ">
+            <div class="w-full h-[90vh] rounded-md p-4 shadow-lg bg-white ">
                 <div class="h-1/2 rounded-md" id="post-1"></div>
-
                 <div>
-                    <div class="py-4">
-                        <div class="px-4 py bg-[#519341] rounded-md w-20 md:16">
-                            <p class="capitalize text-white font-medium">found</p>
-                        </div>
+                    <div class="py-2">
+                        <button class="px-2 py bg-[#519341] rounded-sm md:16">
+                            <p class="capitalize text-white text-[0.8rem] text-center font-medium">found</p>
+                        </button>
                     </div>
-
+                    
                     <div class="">
-                        <h3 class="font-semibold text-[1.3rem]">
-                            Black Addidas daily Ii backpack
+                        <h3 class="font-semibold text-[1.2rem]">
+                            Black Adidas daily Ii backpack
                         </h3>
                     </div>
 
                     <div class="flex gap-2 py-4 items-center">
-                        <iconify-icon icon="bxs:category-alt" style="color: #519341;" width="20" height="20"></iconify-icon>
-                        <p  class="font-medium text-gray-400">Bags/Backpack</p>
+                        <iconify-icon icon="bxs:category-alt" style="color: #555555;" width="20" height="20"></iconify-icon>
+                        <p  class="font-medium text-gray-400 text-[0.8rem]">Bags/Backpack</p>
                     </div>
 
-                    <div class="flex justify-between justify-center items-center">
+                    <div class="flex justify-between items-center">
                         <div class="flex gap-2">
-                            <iconify-icon icon="mingcute:location-2-fill" style="color: #519341;" height="20" width="20"  ></iconify-icon>
-                            <p class="font-medium text-gray-400" >Ibadan</p>
+                            <iconify-icon icon="mingcute:location-2-fill" style="color: #555555;" height="20" width="20"  ></iconify-icon>
+                            <p class="font-medium text-gray-400 text-[0.8rem]" >Ibadan</p>
                         </div>
-                        <div class="flex gap-2 justify-between justify-center items-center">
-                            <iconify-icon icon="mingcute:time-fill" style="color: #519341;" height="20" width="20"></iconify-icon>
-                            <p  class="font-medium text-gray-400">30 mins ago</p>
+                        <div class="flex gap-2 justify-between items-center">
+                            <iconify-icon icon="mingcute:time-fill" style="color: #555555;" height="20" width="20"></iconify-icon>
+                            <p  class="font-medium text-gray-400 text-[0.8rem]">30 mins ago</p>
                         </div>
                     </div>
-
+                    
                     <div class="pt-4 w-[30%]">  <input
                         value="favorite-button"
                         name="favorite-checkbox"
@@ -708,7 +728,7 @@
             <div class=" h-[30vh] flex flex-col justify-center items-center  border border-gray-400">
               
                 <div class="w-16 h-16 rounded-full bg-blue-400 flex justify-center items-center
-                transition ease-in-out delay-200  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-300 ">
+                transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500 ">
                     <iconify-icon icon="emojione:mobile-phone" width="40" height="40"></iconify-icon>
                 </div>
                 <div class="mt-4">
@@ -718,7 +738,7 @@
             </div>
 
             <div class=" h-[30vh] flex flex-col justify-center items-center border border-gray-400">
-                <div class="w-16 h-16 rounded-full bg-indigo-400 flex justify-center items-center  transition ease-in-out delay-200  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-300">
+                <div class="w-16 h-16 rounded-full bg-indigo-400 flex justify-center items-center  transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500">
                     <iconify-icon icon="emojione:dog"  width="35" height="35"></iconify-icon>
                 </div>
                 <div class="mt-4">
@@ -728,7 +748,7 @@
 
             <div class=" h-[30vh] flex flex-col justify-center items-center border border-gray-400">
                 <div class="w-16 h-16 rounded-full bg-[#519341] flex justify-center items-center
-                transition ease-in-out delay-200  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-300">
+                transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500">
                     <iconify-icon icon="fxemoji:handbag" width="35" height="35"></iconify-icon>
                 </div>
                 <div class="mt-4">
@@ -738,7 +758,7 @@
 
             <div class=" h-[30vh] flex flex-col justify-center items-center border border-gray-400">
                 <div class="w-16 h-16 rounded-full bg-red-400 flex justify-center items-center
-                transition ease-in-out delay-200  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-300">
+                transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500">
                     <iconify-icon icon="emojione-v1:document"  width="35" height="35"></iconify-icon>
                 </div>
                 <div class="mt-4">
@@ -748,7 +768,7 @@
             
             <div class=" h-[30vh] flex flex-col justify-center items-center border border-gray-400">
                 <div class="w-16 h-16 rounded-full bg-cyan-900  flex justify-center items-center
-                transition ease-in-out delay-200  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-300">
+                transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500">
                     <iconify-icon icon="game-icons:house-keys" style="color: #bea305;" width="35" height="35"></iconify-icon>  
                 </div>
                 <div class="mt-4">
@@ -757,7 +777,7 @@
             </div>
             <div class=" h-[30vh] flex flex-col justify-center items-center border border-gray-400">
                 <div class="w-16 h-16 rounded-full bg-red-800 flex justify-center items-center
-                transition ease-in-out delay-200  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-300">
+                transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500">
                     <iconify-icon icon="fluent-emoji:laptop"  width="35" height="35"></iconify-icon>
                 </div>
                 <div class="mt-4">
@@ -766,7 +786,7 @@
             </div>
             <div class=" h-[30vh] flex flex-col justify-center items-center border border-gray-400">
                 <div class="w-16 h-16 rounded-full bg-[#519341] flex justify-center items-center
-                transition ease-in-out delay-200  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-300">
+                transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500">
                     <iconify-icon icon="noto:watch" width="35" height="35"></iconify-icon>
                 </div>
                 <div class="mt-4">
@@ -775,7 +795,7 @@
             </div>
             <div class="h-[30vh] flex flex-col justify-center items-center border border-gray-400">
                 <div class="w-16 h-16 rounded-full bg-[#f1910e] flex justify-center items-center
-                transition ease-in-out delay-200  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-300">
+                transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500">
                     <iconify-icon icon="emojione:ring" width="35" height="35"></iconify-icon>
                 </div>
                 <div class="mt-4">
@@ -784,7 +804,7 @@
             </div>
             <div class="h-[30vh] flex flex-col justify-center items-center border border-gray-400">
                 <div class="w-16 h-16 rounded-full bg-pink-400 flex justify-center items-center
-                transition ease-in-out delay-200  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-300">
+                transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500">
                     <iconify-icon icon="emojione-v1:blue-book" width="35" height="35"></iconify-icon>
                 </div>
                 <div class="mt-4">
@@ -793,7 +813,7 @@
             </div>
             <div class=" h-[30vh] flex flex-col justify-center items-center border border-gray-400">
                 <div class="w-16 h-16 rounded-full bg-amber-400 flex justify-center items-center
-                transition ease-in-out delay-200  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-300">
+                transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500">
                     <iconify-icon icon="noto:coat"  width="40" height="40"></iconify-icon>
                 </div>
                 <div class="mt-4">
@@ -802,7 +822,7 @@
             </div>
             <div class=" h-[30vh] flex flex-col justify-center items-center border border-gray-400">
                 <div class="w-16 h-16 rounded-full bg-violet-800 flex justify-center items-center
-                transition ease-in-out delay-200  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-300">
+                transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500">
                     <iconify-icon icon="flat-color-icons:money-transfer" width="40" height="40"></iconify-icon>
                 </div>
                 <div class="mt-4">
@@ -811,7 +831,7 @@
             </div>
             <div class="h-[30vh] flex flex-col justify-center items-center border border-gray-400">
                 <div class="w-16 h-16 rounded-full bg-blue-900 flex justify-center items-center
-                transition ease-in-out delay-200  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-300">
+                transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500">
                     <iconify-icon icon="openmoji:toolbox" width="42" height="42"></iconify-icon>
                 </div>
                 <div class="mt-4">
@@ -1003,8 +1023,8 @@
                     <h2 class="font-bold text-[1.5rem]">FinditReunite</h2>
                     <p class="py-2">Subscribe to our Newsletter</p>
                     <form action="" method="post">
-                        <input type="email" name="Newsletter" id="Newsletter" placeholder="Your Email" class="text-black px-4 py-2 rounded-md">
-                        <button type="submit" class="bg-[#f1910e] px-4 py-2 rounded-md ml-[-10px]">subscribe</button>
+                        <input type="email" name="Newsletter" id="Newsletter" placeholder="Your Email" class="text-black px-4 py-2 rounded-md outline-none focus:border-2 focus:border-[#834193] focus:bg-[#dfffd7]">
+                        <button type="submit" class="bg-[#f1910e]  px-4 py-2 rounded-md ml-[-10px]">subscribe</button>
                     </form>
                 </div>
             </div>
@@ -1020,8 +1040,8 @@
              </div>
              <div>
                 <ul class="flex gap-2 justify-center items-center">
-                    <li><a href=""></a><iconify-icon icon="logos:facebook" width="30" height="30"></iconify-icon></li>
-                    <li><a href=""></a><iconify-icon icon="fa6-brands:square-x-twitter" style="color: black;" width="30" height="30"></iconify-icon></iconify-icon></li>
+                    <li><a href="https://www.facebook.com/ajayi.folushoemmanuel.3?mibextid=ZbWKwL"><iconify-icon icon="logos:facebook" width="30" height="30"></iconify-icon></a></li>
+                    <li><a href="https://x.com/foleyemma_03?s=09"><iconify-icon icon="fa6-brands:square-x-twitter" style="color: black;" width="30" height="30"></iconify-icon></iconify-icon></a></li>
                     <li><a href=""></a><iconify-icon icon="skill-icons:instagram" width="30" height="30"></iconify-icon></li>
                 </ul>
              </div>

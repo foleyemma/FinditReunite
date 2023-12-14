@@ -1,12 +1,48 @@
 /* Initial state without background */
 nav {
-  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  transition: background-color 2.6s ease; 
 }
 
 /* Class to show background when scrolling down */
 .show-background {
-  background-color: rgba(255, 255, 255, 0.9); /* Set your desired background color */
-  backdrop-filter: blur(10px); /* Optional: Apply a backdrop filter for a blur effect */
+  background-color: #ffffff;
+}
+
+.backdrop-filter {
+  backdrop-filter: blur(70px); 
+}
+
+/* slider */
+.animate-move-left {
+  transition: transform 1s ease-in-out;
+}
+
+/* .animate-move-left {
+  animation: moveLeft is 1s linear forwards;
+ } */
+
+ @keyframes moveleft {
+  0% {
+   transform: translateX(0);
+  }
+
+  100% {
+   transform: translateX(-200%);
+  }
+}
+
+@keyframes moveright {
+  0% {
+   transform: translateX(0);
+  }
+
+  100% {
+   transform: translateX(200%);
+  }
+}
+
+.animate-move-right {
+  animation: moveRight is 1s linear forwards;
 }
 
 
@@ -25,43 +61,6 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
 } 
-
-
-/* .animate-move-left {
-  animation: moveLeft is 1s linear forwards;
- }
-
-@keyframes moveleft {
-  0% {
-   transform: translateX(0);
-  }
-
-  100% {
-   transform: translateX(-200%);
-  }
-}
-
-
-
-
-@keyframes moveright {
-       0% {
-        transform: translateX(0);
-       }
-
-       100% {
-        transform: translateX(200%);
-       }
-} */
-
-
-.animate-move-left {
-  transition: transform 1s ease-in-out;
-}
-
-/* .animate-move-right {
-  animation: moveRight is 1s linear forwards;
-} */
 #slider-img-4{
     background-image: url(images/img-slider-4.jpg);
     background-size: cover;
