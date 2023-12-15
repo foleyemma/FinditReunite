@@ -99,7 +99,7 @@
         </div>
     </head>
     
-    <div id="slider" class="">
+    <div id="slider" class="z-40">
         <div id="slider-img" class="h-[60vh] md:h-[75vh] lg:h-[90vh] w-[100%] flex overflow-hidden ">
             <div id="slider-img-1" class="w-full h-full  animate-move-left flex justify-center items-center">
                 <div class=" bg-blue-950 bg-opacity-25 h-16 w-[90%] skew-x-2">
@@ -141,22 +141,22 @@
             </div>
             
             <div id="slider-img-5" class="w-full h-full hidden">
-              <div class="flex flex-col gap-2">
-                <p class="text-white text-[2.4rem] bg-[#519341] bg-opacity-30 text-center">
-                    Bring your Lost & Found into the 21st Century 
-                </p>
-                <p class="text-white text-[1.5rem] bg-[#519341] bg-opacity-30 text-center">
-                    FinditReunite is a 21st Century solution for your Lost & Found
-                </p>
-              </div>
+                <div class="flex flex-col gap-2">
+                    <p class="text-white text-[2.4rem] bg-[#519341] bg-opacity-30 text-center">
+                        Bring your Lost & Found into the 21st Century 
+                    </p>
+                    <p class="text-white text-[1.5rem] bg-[#519341] bg-opacity-30 text-center">
+                        FinditReunite is a 21st Century solution for your Lost & Found
+                    </p>
+            </div>
             </div>
         </div>
         
         <div id="slider-button" class="flex justify-between relative bottom-72 mb-4">
-            <div id="prev-button" class="flex justify-center items-center w-28 h-28 rounded-full hover:backdrop-blur-sm">
+            <div id="prev-button" class="flex justify-center items-center w-28 h-28 rounded-full hover:backdrop-blur-md">
                 <iconify-icon icon="material-symbols:arrow-back-ios-rounded" width="50" height="50" class=" text-center text-[#F1F1F1] text-opacity-50"></iconify-icon>
             </div>
-            <div id="next-button" class="flex items-center justify-center w-28 h-28 rounded-full hover:backdrop-blur-sm">
+            <div id="next-button" class="flex items-center justify-center w-28 h-28 rounded-full bg-transparent focus:backdrop-blur">
                 <iconify-icon icon="ic:round-arrow-forward-ios" width="50" height="50" class="text-[#F1F1F1] text-opacity-50"></iconify-icon>
             </div>
         </div>
@@ -525,6 +525,10 @@
                 </div>
             </div>
         </div>
+
+        <div>
+            <p class="underline text-[#519341] text-center text-[1.1rem] py-4">See more</p>
+        </div>
 </section>
 
 <section id="categories" class="px-10 lg:px-16 py-4 ">
@@ -807,7 +811,7 @@
          </div>
     </section>
     
-    <div id="scrollup"  class="fixed right-6 bottom-6 hidden ">
+    <div id="scrollUp"  class="fixed right-6 bottom-6 hidden ">
         <button id="scrollToTop" class="rounded-full bg-[#834193] p-3 flex items-center justify-center">
             <iconify-icon icon="mingcute:arrow-up-fill" style="color: white;" width="25" height="25"></iconify-icon>
             
@@ -818,36 +822,36 @@
         <div class="flex flex-col lg:flex-row justify-around px-12 lg:px-0 gap-6">
             <div>
                 <h3 class="font-semibold text-[1.1rem] py-2 capitalize">company</h3>
-                <ul class="capitalize font-light flex flex-col gap-2">
-                    <li><a href="aboutus.html">about us</a></li>
-                    <li><a href="contactus.html">contact us</a></li>
-                    <li><a href="">disclamer</a></li>
-                    <li><a href="">donate</a></li>
-                    <li><a href="">how it works</a></li>
+                <ul class="capitalize font-light flex flex-col gap-2 ">
+                    <li class="hover:list-disc"><a href="aboutus.html">about us</a></li>
+                    <li class="hover:list-disc"><a href="contactus.html">contact us</a></li>
+                    <li class="hover:list-disc"><a href="">disclamer</a></li>
+                    <li class="hover:list-disc"><a href="">donate</a></li>
+                    <li class="hover:list-disc"><a href="">how it works</a></li>
                 </ul>
             </div>
 
             <div>
                 <h3 class="font-semibold text-[1.1rem] capitalize py-2">resources</h3>
                 <ul class="capitalize font-light flex flex-col gap-2">
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">blog</a></li>
-                    <li><a href="">terms</a></li>
-                    <li><a href="">legal</a></li>
-                    <li><a href="">privacy policy</a></li>
+                    <li class="hover:list-disc"><a href="">FAQ</a></li>
+                    <li class="hover:list-disc"><a href="">blog</a></li>
+                    <li class="hover:list-disc"><a href="">terms</a></li>
+                    <li class="hover:list-disc"><a href="">legal</a></li>
+                    <li class="hover:list-disc"><a href="">privacy policy</a></li>
                 </ul>
             </div>
 
             <div>
                 <h3 class="font-semibold text-[1.1rem] py-2 capitalize">quick links</h3>
                 <ul class="capitalize font-light flex flex-col gap-2">
-                    <li><a href="">log in</a></li>
-                    <li><a href="">sign in</a></li>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="">search</a></li>
-                    <li><a href="">post an ad</a></li>
-                    <li><a href="">report lost</a></li>
-                    <li><a href="">report found</a></li>
+                    <li class="hover:list-disc"><a href="sign-in.html">log in</a></li>
+                    <li class="hover:list-disc"><a href="">sign up</a></li>
+                    <li class="hover:list-disc"><a href="index.html">home</a></li>
+                    <li class="hover:list-disc"><a href="">search</a></li>
+                    <li class="hover:list-disc"><a href="">post an ad</a></li>
+                    <li class="hover:list-disc"><a href="">report lost</a></li>
+                    <li class="hover:list-disc"><a href="">report found</a></li>
                 </ul>
             </div>
 

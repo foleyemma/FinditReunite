@@ -76,3 +76,196 @@
 .btn-12:hover:before {
   --progress: 0;
 }
+
+#post-1 {
+  overflow: hidden;
+}
+
+#post-1 {
+  transition: transform 0.5s ease;
+}
+
+#post-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); /* Adjust colors as needed */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+} 
+
+ #post-1:hover .image {
+  transform: scale(1.1); 
+}
+
+  
+#post-1:hover::before {
+  opacity: 1; } 
+
+#post-3 {
+  overflow: hidden;
+}
+
+#post-3 {
+  transition: transform 0.5s ease;
+}
+
+#post-3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); /* Adjust colors as needed */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+} 
+
+ #post-3:hover .image {
+  transform: scale(1.1); 
+}
+
+  
+#post-3:hover::before {
+  opacity: 1; }
+
+#post-4 {
+  overflow: hidden;
+}
+
+#post-4 {
+  transition: transform 0.5s ease;
+}
+
+#post-4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); /* Adjust colors as needed */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+} 
+
+ #post-4:hover .image {
+  transform: scale(1.1); 
+}
+
+  
+#post-4:hover::before {
+  opacity: 1; }
+
+#post-5 {
+  overflow: hidden;
+}
+
+#post-5 {
+  transition: transform 0.5s ease;
+}
+
+#post-5::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); /* Adjust colors as needed */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+} 
+
+ #post-5:hover .image {
+  transform: scale(1.1); 
+}
+
+  
+#post-5:hover::before {
+  opacity: 1; }
+
+#post-6 {
+  overflow: hidden;
+}
+
+#post-6 {
+  transition: transform 0.5s ease;
+}
+
+#post-6::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); /* Adjust colors as needed */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+} 
+
+ #post-6:hover .image {
+  transform: scale(1.1); 
+}
+
+  
+#post-6:hover::before {
+  opacity: 1; } 
+
+#post-2 {
+  overflow: hidden;
+}
+
+#post-2 {
+  transition: transform 0.5s ease;
+}
+
+#post-2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); /* Adjust colors as needed */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+} 
+
+ #post-2:hover .image {
+  transform: scale(1.1); 
+}
+
+  
+#post-2:hover::before {
+  opacity: 1; } 
+
+
+  /* .border-b-4 {
+    cursor: pointer;
+    position: relative;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  } */
+  
+
+/*   
+  .border-b-4:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  } */

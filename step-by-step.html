@@ -5,8 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Step</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="step.css">
 </head>
-<body class="md:bg-[url('/images/step-by-bg.jpg')] bg-no-repeat md:bg-cover px-10 py-10 bg-[#F1F1F1] ">
+<body class="md:bg-[url('/images/step-by-bg.jpg')] bg-no-repeat md:bg-cover bg-[#F1F1F1] ">
+    <nav class="z-50 w-full drop-shadow-lg bg-fixed fixed flex justify-between show-background py-3 lg:justify-around items-center px-6 lg:px-0">
+        <div id="logo&name" class="flex justify-center items-center gap-4">
+            <div>
+                <img src="images/logo.png" alt="" width="35" height="35">
+            </div>
+            <div>
+                <h2 class="text-[#519341] text-[1.4rem] font-semibold">FinditReunite</h2>
+                <p id="subtitle" class="uppercase text-light tracking-widest text-gray-500">a lost and found company</p>
+            </div>
+        </div>
+        
+        <div class="flex gap-4 justify-center items-center">
+            <div class="flex gap-4 justify-center items-center lg:hidden">
+                <div>
+                    <iconify-icon icon="line-md:person-add-filled" style="color: #f1910e;" width="30" height="30"></iconify-icon>
+                </div>
+                <div>
+                    <iconify-icon icon="fontisto:unlocked" style="color: rgb(73, 73, 73);" width="20" height="20"></iconify-icon>
+                </div>
+            </div>
+            <div id="nav-toggler">
+                <iconify-icon id="show-menu" icon="tabler:menu-deep"  style="color: rgb(73, 73, 73);" width="30" height="30" class="md:hidden"></iconify-icon>
+                <iconify-icon id="hide-menu" icon="ph:x-bold" style="color: red;" width="30" height="30" class="hidden"></iconify-icon>
+            </div>
+        </div>
+        
+        <div id="nav-menu" class="hidden lg:block ">
+            <div class="flex justify-between items-center gap-20">
+                <div class="flex justify-center items-center">
+                    <ul class="flex gap-6 capitalize items-center justify-center">
+                        <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold font-semibold "><a href="index.html">home</a></li>
+                        <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="lost.html">report lost</a></li>
+                        <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">report found</a></li>
+                        <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">about us</a></li>
+                        <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="contactus.html">contact us</a></li>
+                        <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">blog</a></li>
+                    </ul>
+            </div>
+            
+            <div class="flex justify-center items-center gap-4  text-[1rem] ">
+                <a href="sign-in.html">
+                    <button class="py-2 px-6 rounded-md border-2  font-medium hover:border-[#f1910e] hover:bg-[#f1910e] hover:bg-opacity-20 hover:text-[#f1910e] border-[#519341] text-[#519341] bg-[#dfffd7] ">log in</button>
+                </a>
+                
+                <a href="sign-up.html">
+                    <button class="py-2 px-6 rounded-md bg-[#f1910e] hover:bg-[#519341] capitalize  shadow-md text-white font-medium">sign up</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+<div id="nav-drop" class="w-full hidden bg-white bg-opacity-60 lg:hidden fixed top-20 py-4 mb-7 backdrop-blur-lg">
+    <div class="flex justify-center items-center ">
+        <ul class="flex flex-col gap-6 capitalize items-center justify-center">
+            <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold font-semibold "><a href="index.html">home</a></li>
+            <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="lost.html">report lost</a></li>
+            <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">report found</a></li>
+            <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">saved ads</a></li>
+            <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">post an ad</a></li>
+            <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">about us</a></li>
+            <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="contactus.html">contact us</a></li>
+            <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">blog</a></li>
+        </ul>
+    </div>
+</div>
+   <section class="px-10 py-24">
     <div id="Step-process" class="px-10 lg:px-16 bg-white py-6 md:w-[70%] lg:w-[50%] bg-opacity-80 drop-shadow-xl">
         <div>
             <h3 class="text-4xl pb-8 pt-4 font-medium text-gray-700">Step-By-Step Process</h3>
@@ -18,7 +86,8 @@
                     
                     <iconify-icon icon="fluent:checkmark-circle-48-filled" style="color: #519341;" width="26"></iconify-icon>
                     <p>
-                        enter <a href="lost.html">lost</a> or <a href="found.html">found items details (e.g., item lost or found, category, photos, date, time, etc)</a>
+                        enter <a class="text-[#519341]" href="lost.html">lost</a> or <a class="text-[#519341]" href="found.html">found</a>
+                        items details (e.g., item lost or found, category, photos, date, time, etc)
                     </p>
                 </li>
                 <li  class="flex gap-4">
@@ -51,16 +120,87 @@
         </div>
 
 
-        <div class="py-5  text-white font-medium flex flex-col md:flex-row gap-8 ">
+        <div class="py-5 px-2 text-white font-medium flex flex-col md:flex-row gap-8 ">
             <a href="lost.html">
-                <button class="bg-[#519341] py-5 px-6 rounded-md capitalize ">report lost item</button>
+                <button class="bg-[#519341] py-5 px-6 rounded-md capitalize focus:border-2 focus:border-[#834193]">report lost item</button>
             </a>
             <a href="found.html">
                 <button class="py-5 px-4 rounded-md border-2 border-[#519341] capitalize text-[#519341]">report found item</button>
             </a>
         </div>
     </div>
+   </section>
 
+    <footer class="bg-[#519341] text-white w-[100%]  py-12 lg:h-[70vh]">
+        <div class="flex flex-col lg:flex-row justify-around px-12 lg:px-0 gap-6">
+            <div>
+                <h3 class="font-semibold text-[1.1rem] py-2 capitalize">company</h3>
+                <ul class="capitalize font-light flex flex-col gap-2 ">
+                    <li class="hover:list-disc"><a href="aboutus.html">about us</a></li>
+                    <li class="hover:list-disc"><a href="contactus.html">contact us</a></li>
+                    <li class="hover:list-disc"><a href="">disclamer</a></li>
+                    <li class="hover:list-disc"><a href="">donate</a></li>
+                    <li class="hover:list-disc"><a href="">how it works</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-[1.1rem] capitalize py-2">resources</h3>
+                <ul class="capitalize font-light flex flex-col gap-2">
+                    <li class="hover:list-disc"><a href="">FAQ</a></li>
+                    <li class="hover:list-disc"><a href="">blog</a></li>
+                    <li class="hover:list-disc"><a href="">terms</a></li>
+                    <li class="hover:list-disc"><a href="">legal</a></li>
+                    <li class="hover:list-disc"><a href="">privacy policy</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-[1.1rem] py-2 capitalize">quick links</h3>
+                <ul class="capitalize font-light flex flex-col gap-2">
+                    <li class="hover:list-disc"><a href="sign-in.html">log in</a></li>
+                    <li class="hover:list-disc"><a href="">sign up</a></li>
+                    <li class="hover:list-disc"><a href="index.html">home</a></li>
+                    <li class="hover:list-disc"><a href="">search</a></li>
+                    <li class="hover:list-disc"><a href="">post an ad</a></li>
+                    <li class="hover:list-disc"><a href="">report lost</a></li>
+                    <li class="hover:list-disc"><a href="">report found</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <div>
+                    <h2 class="font-bold text-[1.5rem]">FinditReunite</h2>
+                    <p class="py-2">Subscribe to our Newsletter</p>
+                    <form action="" method="post">
+                        <input type="email" name="Newsletter" id="Newsletter" placeholder="Your Email" class="text-black px-4 py-2 rounded-md outline-none focus:border-2 focus:border-[#834193] focus:bg-[#dfffd7]">
+                        <button type="submit" class="bg-[#f1910e]  px-4 py-2 rounded-md ml-[-10px]">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex lg:flex-row flex-col gap-6 lg:gap-0 jusify-center items-center justify-around lg:mt-12 lg:pb-2 py-12 lg:py-0">
+        
+                <hr class="border-2 rounded-full lg:w-[25%] w-[50%] bg-black">
+            
+           <div class="flex gap-4">
+             <div>
+                <p>@FinditReunite .LTD 2023 Built by Foley</p>
+             </div>
+             <div>
+                <ul class="flex gap-2 justify-center items-center">
+                    <li><a href="https://www.facebook.com/ajayi.folushoemmanuel.3?mibextid=ZbWKwL"><iconify-icon icon="logos:facebook" width="30" height="30"></iconify-icon></a></li>
+                    <li><a href="https://x.com/foleyemma_03?s=09"><iconify-icon icon="fa6-brands:square-x-twitter" style="color: black;" width="30" height="30"></iconify-icon></iconify-icon></a></li>
+                    <li><a href=""></a><iconify-icon icon="skill-icons:instagram" width="30" height="30"></iconify-icon></li>
+                </ul>
+             </div>
+           </div>
+
+           <hr class="border-2 rounded-full lg:w-[25%] w-[50%] bg-black">
+        </div>
+    </footer>
 </body>
+<script src="javascript/lost.js"></script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </html>

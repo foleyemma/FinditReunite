@@ -5,11 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact FinditReunite </title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="step.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#F1F1F1]">
-    <header class="flex flex-col items-center justify-center py-6">
-        <h1 class="text-[#519341] text-[1.6rem] font-semibold capitalize" >contact us</h1>
+    <nav class="z-50 w-full drop-shadow-lg bg-fixed fixed flex justify-between show-background py-3 lg:justify-around items-center px-6 lg:px-0">
+        <div id="logo&name" class="flex justify-center items-center gap-4">
+            <div>
+                <img src="images/logo.png" alt="" width="35" height="35">
+            </div>
+            <div>
+                <h2 class="text-[#519341] text-[1.4rem] font-semibold">FinditReunite</h2>
+                <p id="subtitle" class="uppercase text-light tracking-widest text-gray-500">a lost and found company</p>
+            </div>
+        </div>
+        
+        <div class="flex gap-4 justify-center items-center">
+            <div class="flex gap-4 justify-center items-center lg:hidden">
+                <div>
+                    <iconify-icon icon="line-md:person-add-filled" style="color: #f1910e;" width="30" height="30"></iconify-icon>
+                </div>
+                <div>
+                    <iconify-icon icon="fontisto:unlocked" style="color: rgb(73, 73, 73);" width="20" height="20"></iconify-icon>
+                </div>
+            </div>
+            <div id="nav-toggler">
+                <iconify-icon id="show-menu" icon="tabler:menu-deep"  style="color: rgb(73, 73, 73);" width="30" height="30" class="md:hidden"></iconify-icon>
+                <iconify-icon id="hide-menu" icon="ph:x-bold" style="color: red;" width="30" height="30" class="hidden"></iconify-icon>
+            </div>
+        </div>
+        
+        <div id="nav-menu" class="hidden lg:block ">
+            <div class="flex justify-between items-center gap-20">
+                <div class="flex justify-center items-center">
+                    <ul class="flex gap-6 capitalize items-center justify-center">
+                        <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold font-semibold "><a href="index.html">home</a></li>
+                        <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="lost.html">report lost</a></li>
+                        <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">report found</a></li>
+                        <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">about us</a></li>
+                        <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="contactus.html">contact us</a></li>
+                        <li class="py-2 hover:border-b-4 border-[#834193] hover:font-semibold"><a href="">blog</a></li>
+                    </ul>
+            </div>
+            
+            <div class="flex justify-center items-center gap-4  text-[1rem] ">
+                <a href="sign-in.html">
+                    <button class="py-2 px-6 rounded-md border-2  font-medium hover:border-[#f1910e] hover:bg-[#f1910e] hover:bg-opacity-20 hover:text-[#f1910e] border-[#519341] text-[#519341] bg-[#dfffd7] ">log in</button>
+                </a>
+                
+                <a href="sign-up.html">
+                    <button class="py-2 px-6 rounded-md bg-[#f1910e] hover:bg-[#519341] capitalize  shadow-md text-white font-medium">sign up</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <header class="flex flex-col items-center justify-center py-24">
+        <h1 class="text-[#519341] text-[2rem] font-semibold capitalize" >contact us</h1>
         <p>We are always available to receive and attend to your messages </p>
     </header>
 
@@ -17,7 +71,8 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
             <div class=" flex justify-center items-center ">
                 <div class="bg-white rounded-md w-[70%] lg:w-[80%] h-[20vh] flex flex-col items-center justify-center">
-                    <div class="shadow-lg w-20 h-20 bg-white hover:text-[#519341] text-[#555555] hover:bg-[#834193] rounded-md flex items-center justify-center  relative bottom-14">
+                    <div class="shadow-lg w-20 h-20 bg-white hover:text-[#f1910e] text-[#555555] hover:bg-[#DFFFD7] rounded-md flex items-center justify-center  relative bottom-14
+                    transition ease-in-out delay-75  hover:-translate-y-3 hover:scale-125 duration-700">
                         <iconify-icon icon="mdi:telephone"  width="50" height="50"></iconify-icon>
                     </div>
                     <div class="relative bottom-8">
@@ -28,7 +83,8 @@
 
             <div class=" flex justify-center items-center ">
                 <div class="bg-white rounded-md w-[70%] lg:w-[80%]  h-[20vh] flex flex-col items-center justify-center">
-                    <div class="shadow-lg w-20 h-20 bg-white hover:text-[#519341] text-[#555555] hover:bg-[#834193] rounded-md flex items-center justify-center  relative bottom-14">
+                    <div class="shadow-lg w-20 h-20 bg-white hover:text-[#f1910e] text-[#555555] hover:bg-[#DFFFD7] rounded-md flex items-center justify-center  relative bottom-14
+                    transition ease-in-out delay-75  hover:-translate-y-3 hover:scale-125 duration-700">
                         <iconify-icon icon="mdi:gmail" width="50" height="50"></iconify-icon>
                     </div>
                     <div class="relative bottom-8">
@@ -39,11 +95,12 @@
 
             <div class=" flex justify-center items-center ">
                 <div class="bg-white rounded-md w-[70%] lg:w-[80%]  h-[20vh] flex flex-col items-center justify-center">
-                    <div class="shadow-lg w-20 h-20 bg-white hover:text-[#519341] text-[#555555] hover:bg-[#834193] rounded-md flex items-center justify-center  relative bottom-14">
+                    <div class="shadow-lg w-20 h-20 bg-white hover:text-[#F1910E] text-[#555555] hover:bg-[#DFFFD7] rounded-md flex items-center justify-center  relative bottom-14
+                    transition ease-in-out delay-75  hover:-translate-y-3 hover:scale-125 duration-700">
                         <iconify-icon icon="ion:location-sharp"  width="50" height="50"></iconify-icon>
                     </div>
                     <div class="relative bottom-8">
-                        <p class="font-medium text-gray-600 tracking-wide text-[1.1rem]">+234 907 118 1860</p>
+                        <p class="font-medium text-gray-600 tracking-wide text-[1.1rem]">Ibadan, Oyo state</p>
                     </div>
                 </div>
             </div>
@@ -61,23 +118,23 @@
                 <div class="flex flex-col ">
                     <label for="name" class="text-[1rem] px-2 text-gray-600 font-medium">Name</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" 
-                    class="focus:outline-none focus:border-blue-500 border focus:border-2 border-gray-500 py-2 w-[90%] lg:w-full rounded-2xl px-4">
+                    class="border outline-none focus:border-2 focus:border-[#834193] focus:bg-[#dfffd7] border-gray-500 py-2 w-[90%] lg:w-full rounded-2xl px-4">
                 </div>
 
                 <div class="flex flex-col ">
                     <label for="email" class="text-[1rem] px-2 text-gray-600 font-medium">Email</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" 
-                    class="focus:outline-none focus:border-blue-500 border focus:border-2 border-gray-500 py-2 w-[90%] lg:w-full rounded-2xl px-4">
+                    class="focus:outline-none focus:border-[#834193] focus:bg-[#dfffd7] border focus:border-2 border-gray-500 py-2 w-[90%] lg:w-full rounded-2xl px-4">
                 </div>
 
                 <div class="flex flex-col ">
                     <label for="message" class="text-[1rem] px-2 text-gray-600 font-medium">Message</label>
                     <input type="text" id="message" name="message" placeholder="Leave a message" 
-                    class="focus:outline-none focus:border-blue-500 border focus:border-2 border-gray-500 py-2 w-[90%] lg:w-full pb-16 rounded-2xl px-4">
+                    class="focus:outline-none focus:border-[#834193] focus:bg-[#dfffd7] border focus:border-2 border-gray-500 py-2 w-[90%] lg:w-full pb-16 rounded-2xl px-4">
                 </div>
 
                 <div>
-                    <button type="submit" class="py-2 px-10 border bg-[#519341] hover:shadow-inner text-white text-[1.1rem] shadow-lg hover:drop-shadow-lg font-semibold hover:font-bold hover:bg-opacity-80 rounded-lg">Send</button>
+                    <button type="submit" class="py-2 px-10 border bg-[#519341] hover:shadow-inner text-white text-[1.1rem] shadow-lg hover:drop-shadow-lg font-semibold  hover:bg-opacity-80 rounded-lg">Send</button>
                 </div>
                 
             </form>
@@ -99,38 +156,40 @@
        </div>
     </section>
 
-    <footer class="bg-[#519341] text-white w-[100%]  py-12 lg:h-[60vh]">
+    <footer class="bg-[#519341] text-white w-[100%]  py-12 lg:h-[70vh]">
         <div class="flex flex-col lg:flex-row justify-around px-12 lg:px-0 gap-6">
             <div>
-                <h3 class="font-semibold text-[1.1rem] capitalize">company</h3>
-                <ul class="capitalize font-light flex flex-col gap-2">
-                    <li><a href="aboutus.html">about us</a></li>
-                    <li><a href="contactus.html">contact us</a></li>
-                    <li><a href="">disclaimer</a></li>
-                    <li><a href="">donate</a></li>
-                    <li><a href="">how it works</a></li>
+                <h3 class="font-semibold text-[1.1rem] py-2 capitalize">company</h3>
+                <ul class="capitalize font-light flex flex-col gap-2 ">
+                    <li class="hover:list-disc"><a href="aboutus.html">about us</a></li>
+                    <li class="hover:list-disc"><a href="contactus.html">contact us</a></li>
+                    <li class="hover:list-disc"><a href="">disclamer</a></li>
+                    <li class="hover:list-disc"><a href="">donate</a></li>
+                    <li class="hover:list-disc"><a href="">how it works</a></li>
                 </ul>
             </div>
 
             <div>
-                <h3 class="font-semibold text-[1.1rem] capitalize">resources</h3>
+                <h3 class="font-semibold text-[1.1rem] capitalize py-2">resources</h3>
                 <ul class="capitalize font-light flex flex-col gap-2">
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">blog</a></li>
-                    <li><a href="">terms</a></li>
-                    <li><a href="">privacy policy</a></li>
+                    <li class="hover:list-disc"><a href="">FAQ</a></li>
+                    <li class="hover:list-disc"><a href="">blog</a></li>
+                    <li class="hover:list-disc"><a href="">terms</a></li>
+                    <li class="hover:list-disc"><a href="">legal</a></li>
+                    <li class="hover:list-disc"><a href="">privacy policy</a></li>
                 </ul>
             </div>
 
             <div>
-                <h3 class="font-semibold text-[1.1rem] capitalize">quick links</h3>
+                <h3 class="font-semibold text-[1.1rem] py-2 capitalize">quick links</h3>
                 <ul class="capitalize font-light flex flex-col gap-2">
-                    <li><a href="">log in</a></li>
-                    <li><a href="">sign in</a></li>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="">search</a></li>
-                    <li><a href="">report lost</a></li>
-                    <li><a href="">report found</a></li>
+                    <li class="hover:list-disc"><a href="sign-in.html">log in</a></li>
+                    <li class="hover:list-disc"><a href="">sign up</a></li>
+                    <li class="hover:list-disc"><a href="index.html">home</a></li>
+                    <li class="hover:list-disc"><a href="">search</a></li>
+                    <li class="hover:list-disc"><a href="">post an ad</a></li>
+                    <li class="hover:list-disc"><a href="">report lost</a></li>
+                    <li class="hover:list-disc"><a href="">report found</a></li>
                 </ul>
             </div>
 
@@ -139,8 +198,8 @@
                     <h2 class="font-bold text-[1.5rem]">FinditReunite</h2>
                     <p class="py-2">Subscribe to our Newsletter</p>
                     <form action="" method="post">
-                        <input type="email" name="Newsletter" id="Newsletter" placeholder="Your Email" class="text-black px-4 py-2 rounded-md">
-                        <button type="submit" class="bg-[#f1910e] px-4 py-2 rounded-md ml-[-10px]">subscribe</button>
+                        <input type="email" name="Newsletter" id="Newsletter" placeholder="Your Email" class="text-black px-4 py-2 rounded-md outline-none focus:border-2 focus:border-[#834193] focus:bg-[#dfffd7]">
+                        <button type="submit" class="bg-[#f1910e]  px-4 py-2 rounded-md ml-[-10px]">subscribe</button>
                     </form>
                 </div>
             </div>
@@ -156,8 +215,8 @@
              </div>
              <div>
                 <ul class="flex gap-2 justify-center items-center">
-                    <li><a href=""></a><iconify-icon icon="logos:facebook" width="30" height="30"></iconify-icon></li>
-                    <li><a href=""></a><iconify-icon icon="fa6-brands:square-x-twitter" style="color: black;" width="30" height="30"></iconify-icon></iconify-icon></li>
+                    <li><a href="https://www.facebook.com/ajayi.folushoemmanuel.3?mibextid=ZbWKwL"><iconify-icon icon="logos:facebook" width="30" height="30"></iconify-icon></a></li>
+                    <li><a href="https://x.com/foleyemma_03?s=09"><iconify-icon icon="fa6-brands:square-x-twitter" style="color: black;" width="30" height="30"></iconify-icon></iconify-icon></a></li>
                     <li><a href=""></a><iconify-icon icon="skill-icons:instagram" width="30" height="30"></iconify-icon></li>
                 </ul>
              </div>
@@ -167,5 +226,6 @@
         </div>
     </footer>
 </body>
+<script src="javascript/lost.js"></script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </html>

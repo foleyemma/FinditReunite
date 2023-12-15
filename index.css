@@ -88,34 +88,6 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* #post-1 {
-  overflow: hidden;
-}
-
-#post-1 {
-  transition: transform 0.5s ease;
-}
-
-#post-1::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); /* Adjust colors as needed */
-  /* opacity: 0;
-  transition: opacity 0.5s ease;
-} 
-
- #post-1:hover .image {
-  transform: scale(1.1); 
-}
-
-  
-#post-1:hover::before {
-  opacity: 1; */
-/* }  */
 
 #post-2{
     background-image: url(images/Hp-lp.jpg);

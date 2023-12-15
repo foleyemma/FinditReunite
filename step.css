@@ -1,0 +1,19 @@
+/* Initial state without background */
+nav {
+    transition: background-color 2.6s ease; 
+  }
+  
+  /* Class to show background when scrolling down */
+  .show-background {
+    background-color: #ffffff;
+  }
+  
+  .backdrop-filter {
+    backdrop-filter: blur(70px); 
+  }
+
+  #subtitle{
+    font-family: Montserrat;
+    font-weight: lighter;
+    font-size: 10px;
+  }

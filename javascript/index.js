@@ -107,15 +107,9 @@ function changeSlider() {
   }, 5000);
 }
 
-const scrollButton = document.querySelector("#scrollup");
 
-function toggleScrollButton() {
-  if (window.scrollY > 0) {
-    scrollButton.classList.remove('hidden');
-  } else {
-    scrollButton.classList.add('hidden');
-  }
-}
+
+
 
 const scrollToTopButton = document.querySelector ('#scrollToTop')
 
@@ -174,3 +168,19 @@ Button3.addEventListener('click', function() {
   Button3.classList.toggle('text-white');
 
 });
+
+
+// Get the button element
+const scrollButton = document.getElementById('scrollUp');
+
+// Function to show or hide the button based on scroll position
+function toggleScrollButton() {
+  if (window.scrollY > 0) {
+    scrollButton.classList.remove('hidden');
+  } else {
+    scrollButton.classList.add('hidden');
+  }
+}
+
+// Add event listener for scrolling
+window.addEventListener('scroll', toggleScrollButton);
