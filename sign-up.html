@@ -4,61 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sign-in.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>FinditReunite.com</title>
 </head>
-<body class="flex justify-center md:justify-start">
-    <div class="bg-white rounded-md bg-opacity-60  px-6 py-6 w-[80%] md:w-[35%] ">
+<body class="flex justify-center md:justify-start lg:pl-24 py-7">
+    <div class="bg-white rounded-md bg-opacity-60  px-6 py-7 w-[80%]  md:w-[65%] lg:w-[35%] ">
         <div id="welcome-to" class="flex justify-between ">
-           <div>
-             <h3 class="font-medium">Welcome to <a href="" class="text-[#519341]">FinditReunite</a></h3>
-           </div>
-
-           <div>
-            <p class="text-mdeium text-gray-500">Have an Account?</p>
-            <p class="text-[#519341] font-semibold"><a href="sign-in.html">Sign in</a></p>
-           </div>
+            <div>
+                <h3 class="font-medium">Welcome to <a href="" class="text-[#519341]">FinditReunite</a></h3>
+            </div>
+            
+            <div>
+                <p class="text-mdeium text-gray-500">Have an Account?</p>
+                <p class="text-[#519341] font-semibold underline"><a href="sign-in.html">Sign in</a></p>
+            </div>
         </div>
 
         <div id="sign up">
             <h1 class="font-bold text-[2.5rem] text-[#519341]">Sign Up</h1>
         </div>
 
-        <div id="form">
+        <form id="new-user">
             <div class="py-2">
-                <p class="py-2">Enter your email address</p>
-                <input type="text" name="" id="email-adress" placeholder="Email address" class="w-[100%] px-2 py-4 rounded-md hover:border-2 border-[1px] border-gray-400">
+                <label for="email-adress" class="py-2">Enter your email address</label>
+                <iconify-icon icon="line-md:email-twotone" class="relative top-10 right-40" width="25" height="25"></iconify-icon>
+                <input type="email" name="email-adress" id="email-adress" placeholder="Email address" class="w-[100%] te px-14 py-2 rounded-md border-[1px] outline-none focus:border-2 focus:border-[#834193] focus:bg-[#dfffd7] border-gray-400">
             </div>
 
             <div class="flex gap-4 py-2">
-               <div class="w-[50%]">
-                 <p class="py-2">Enter username </p>
-                 <input type="text" name="" id="username" placeholder="Username" class="w-[100%] px-2 py-4 rounded-md hover:border-2 border-[1px] border-gray-400">
-               </div>
+                <div class="w-[50%]">
+                    <label class="py-2">Enter username </label>
+                    <input type="text" name="" id="username" placeholder="Username" class="w-[100%] px-2 py-2 rounded-md outline-none focus:border-2 focus:border-[#834193] focus:bg-[#dfffd7] border-[1px] border-gray-400">
+                </div>
 
-               <div class="w-[50%] ">
-                 <p class="py-2">Contact Number</p>
-                 <input type="text" name="" id="contact-number" placeholder="Contact Number " class="w-[100%] px-2 py-4 rounded-md hover:border-2 border-[1px] border-gray-400">
-               </div>
+                <div class="w-[50%] ">
+                    <label for="contact-number" class="py-2">Phone number</label>
+                    <input type="tel" name="" id="contact-number" placeholder="Contact Number " class="w-[100%] px-2 py-2 rounded-md outline-none focus:border-2 focus:border-[#834193] focus:bg-[#dfffd7] border-[1px] border-gray-400">
+                </div>
             </div>
 
             <div class="py-2">
-                <p class="py-2">Enter your password</p>
-                <input type="password" name="" id="enter-password" placeholder="Password" class="w-[100%] px-2 py-4 rounded-md hover:border-2 border-[1px] border-gray-400">
+                <label for="enter-password" class="py-2">Enter your password</label>
+                <input type="password" name="" id="enter-password" placeholder="Password" class="w-[100%] px-2 py-2 rounded-md outline-none focus:border-2 focus:border-[#834193] focus:bg-[#dfffd7] border-[1px] border-gray-400">
             </div>
 
             <div class="py-2"> 
-                <p class="py-2">Confirm your password</p>
-                <input type="password" name="" id="confirm-password" placeholder="Confirm Password" class="w-[100%] px-2 py-4 rounded-md hover:border-2 border-[1px] border-gray-400">
+                <label for="confirm-password" class="py-2">Confirm your password</label>
+                <input type="password" name="" id="confirm-password" placeholder="Confirm Password" class="w-[100%] px-2 py-2 rounded-md outline-none focus:border-2 focus:border-[#834193] focus:bg-[#dfffd7] border-[1px] border-gray-400">
             </div>
-        </div>
 
-        <div id="sign-up-button" class=" py-4 ">
-            <button class="px-6 py-4 bg-[#519341] rounded-md text-white font-semibold">Sign in</button>
-        </div>
+            <div id="sign-up-button" class=" py-4 ">
+                <button class="px-6 py-4 bg-[#519341] focus:border focus:border-[#834193] hover:bg-[#f1910e] hover:bg-opacity-80 shadow-gray-800 shadow-md rounded-md text-white font-semibold"><a href="sign-in.html">Sign up</a></button>
+            </div>
+        </form>
 
         <div class="flex flex-col gap-4">
-            <div class="flex justify-center font-medium text-gray-500 text-[1.2rem]">
+            <div class="flex justify-center font-medium text-gray-600 text-[1.2rem]">
                 <p>or continue with</p>
             </div>
 
@@ -76,6 +80,14 @@
                 </ul>
             </div>
         </div>
+        <div class="px-11 pt-4">
+            <p class="text-center text-[0.9rem] font-light text-gray-800">By clicking "sign in" or "continue with google" you agree to <span class="text-[#519341]">FinditReunite TOS</span>
+                and <span class="text-[#519341]">Privacy policy</span></p>
+        </div>
+    </div>
+
+    <div class="w-[70%] ml-12 hidden lg:block " id="motto">
+        <p class="text-[4.7rem]  text-gradient-to-r from-indigo-500 text-white font-medium uppercase">"where lost meets found, stories reunite"</p>
     </div>
     
 </body>

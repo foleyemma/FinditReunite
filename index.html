@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
@@ -12,8 +13,8 @@
     
 </head>
 <body class="bg-[#F1F1F1]">
-    <header>
-        <nav class="w-full drop-shadow-lg fixed flex justify-between show-background py-3 lg:justify-around items-center px-6 lg:px-0">
+   
+        <nav class="z-50 w-full drop-shadow-lg bg-fixed fixed flex justify-between show-background py-3 lg:justify-around items-center px-6 lg:px-0">
             <div id="logo&name" class="flex justify-center items-center gap-4">
                 <div>
                     <img src="images/logo.png" alt="" width="35" height="35">
@@ -54,7 +55,7 @@
                 
                 <div class="flex justify-center items-center gap-4  text-[1rem] ">
                     <a href="sign-in.html">
-                        <button class="py-2 px-6 rounded-md border-2  font-medium hover:border-[#f1910e] border-[#519341] text-[#519341] bg-[#dfffd7] ">log in</button>
+                        <button class="py-2 px-6 rounded-md border-2  font-medium hover:border-[#f1910e] hover:bg-[#f1910e] hover:bg-opacity-20 hover:text-[#f1910e] border-[#519341] text-[#519341] bg-[#dfffd7] ">log in</button>
                     </a>
                     
                     <a href="sign-up.html">
@@ -63,7 +64,7 @@
                 </div>
             </div>
         </nav>
-    </header>
+    
 
     <div id="nav-drop" class="w-full hidden bg-white bg-opacity-60 lg:hidden fixed top-20 py-4 mb-7 backdrop-blur-lg">
         <div class="flex justify-center items-center ">
@@ -91,48 +92,67 @@
         </div>
         
         <div class="pb-4 flex justify-center items-center">
-            <input type="text" placeholder="Search..."  class="py-2 px-4 rounded-full outline-[#834193] focus:bg-[#dfffd7]">
+            <iconify-icon icon="line-md:search" class="relative left-10 top-0 text-[#555555]" width="20" height="20" rotate="270deg"></iconify-icon>
+            <input type="text" placeholder="Search..."  class="py-2 px-12 rounded-full outline-[#834193] focus:bg-[#dfffd7]">
             <button type="submit"><i class="fa fa-search"></i></button>
+           
         </div>
     </head>
     
     <div id="slider" class="">
-        <div id="slider-img" class="h-[60vh] md:h-[75vh] lg:h-[95vh] w-[100%] flex overflow-hidden ">
-            <div id="slider-img-1" class="w-full h-full animate-move-left">
-                <p class="text-white text-[2.4rem] opacity-80  flex justify-center items center">
-                    5 seconds  slider
-                </p>
+        <div id="slider-img" class="h-[60vh] md:h-[75vh] lg:h-[90vh] w-[100%] flex overflow-hidden ">
+            <div id="slider-img-1" class="w-full h-full  animate-move-left flex justify-center items-center">
+                <div class=" bg-blue-950 bg-opacity-25 h-16 w-[90%] skew-x-2">
+                    <p class="text-white text-[2.4rem] text-center">
+                        Protect your items from loss. Report lost item and post free ad.
+                    </p>
+                </div>
             </div>
             
             <div id="slider-img-2" class="w-full h-full hidden animate-move-left ">
-                <p class="text-white text-[2.4rem] opacity-80  flex justify-center items center">
-                    5 seconds  slider
-                </p>
+                <div class=" flex flex-col justify-between py-10 h-full">
+                    <p class=" bg-red-950 px-6 bg-opacity-25 h-16 text-white text-[2.4rem] w-[50%] ">
+                        Something always gets left behind!
+                    </p>
+                    <p class=" bg-red-950 px-6 bg-opacity-25 h-16 text-white w-[40%] text-[1.7rem] ">
+                        Real time reporting for public transits
+                    </p>
+                </div>
             </div>
             
             <div id="slider-img-3" class="w-full h-full hidden">
-                <p class="text-[1.4rem] lg:text-[2.2rem] opacity-90 font-semibold px-16 pt-14">
+                <p class="text-[2.4rem] lg:text-[2.2rem]  text-red-900 font-semibold px-16 pt-14">
                     Where in the crowd will you find that bag?
                 </p>
-                <p class="text-[1.2rem] lg:text-[1.8rem] opacity-90 font-semibold px-16 py-4 ">
-                    click here to find out more about FinditReunite software for venues
+                <p class="text-[1.5rem] lg:text-[1.8rem text-red-900 font-semibold px-16 py-4 ">
+                    click here to find out more about FinditReunite services for venues
                 </p>
             </div>
             
             <div id="slider-img-4" class="w-full h-full hidden">
-                <p class="text-white text-[2.4rem] opacity-80  flex justify-center items center">
-                    5 seconds  slider
-                </p>
+                <div class="flex flex-col gap-4 items-end justify-end h-full">
+                    <p class="text-yellow-400 pr-7 text-right text-[2.4rem] h-16 bg-black bg-opacity-25">
+                        Lost and Found services for airport
+                    </p>
+                    <p class="text-right text-[1.6rem] text-yellow-400 pr-7 h-16 bg-black bg-opacity-25 ">
+                        Click here for real time Reporting and Items update for Travelers
+                    </p>
+                </div>
             </div>
             
             <div id="slider-img-5" class="w-full h-full hidden">
-                <p class="text-white text-[2.4rem] opacity-80  flex justify-center items center">
-                    5 seconds  slider
+              <div class="flex flex-col gap-2">
+                <p class="text-white text-[2.4rem] bg-[#519341] bg-opacity-30 text-center">
+                    Bring your Lost & Found into the 21st Century 
                 </p>
+                <p class="text-white text-[1.5rem] bg-[#519341] bg-opacity-30 text-center">
+                    FinditReunite is a 21st Century solution for your Lost & Found
+                </p>
+              </div>
             </div>
         </div>
         
-        <div id="slider-button" class="flex justify-between relative bottom-72">
+        <div id="slider-button" class="flex justify-between relative bottom-72 mb-4">
             <div id="prev-button" class="flex justify-center items-center w-28 h-28 rounded-full hover:backdrop-blur-sm">
                 <iconify-icon icon="material-symbols:arrow-back-ios-rounded" width="50" height="50" class=" text-center text-[#F1F1F1] text-opacity-50"></iconify-icon>
             </div>
@@ -142,7 +162,7 @@
         </div>
     </div>
     
-    <div class="grid grid-cols-2 md:grid-cols-3  gap-4 px-10  lg:pl-16 py-8 lg:ml-8">
+    <div class="grid grid-cols-2 md:grid-cols-3  gap-4 px-10  lg:pl-16  lg:ml-8">
         <div id="find-item" class="w-full lg:w-[80%] h-[30vh] flex justify-center items-center">
             <div class="border bg-white h-full flex flex-col justify-center items-center rounded-md shadow-md w-full hover:bg-[#dfffd7]">
                     <div class="transition ease-in-out delay-75  hover:-translate-y-3 hover:scale-125 duration-700">
@@ -191,9 +211,9 @@
             <hr class="border-2 rounded-full w-14 my-2 border-[#834193]">
         </div>
 
-        <div class=" h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-10 ">
-            <div class="w-full h-[90vh] rounded-md p-4 shadow-lg bg-white ">
-                <div class="h-1/2 rounded-md" id="post-1"></div>
+        <div class=" h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4  px-10 ">
+            <div id="recent-1" class="md:w-full w-[80%] ml-14 md:ml-0 lg:ml-0 h-[90vh] rounded-md p-4 shadow-md bg-white ">
+                <div class="h-1/2 rounded-md hover:backdrop-blur-sm" id="post-1"></div>
                 <div>
                     <div class="py-2">
                         <button class="px-2 py bg-[#519341] rounded-sm md:16">
@@ -207,536 +227,334 @@
                         </h3>
                     </div>
 
-                    <div class="flex gap-2 py-4 items-center">
-                        <iconify-icon icon="bxs:category-alt" style="color: #555555;" width="20" height="20"></iconify-icon>
+                    <div class="flex gap-2 py-4 items-center -z-10">
+                        <iconify-icon icon="bxs:category-alt" style="color: #f1910e;" width="20" height="20"></iconify-icon>
                         <p  class="font-medium text-gray-400 text-[0.8rem]">Bags/Backpack</p>
                     </div>
 
                     <div class="flex justify-between items-center">
                         <div class="flex gap-2">
-                            <iconify-icon icon="mingcute:location-2-fill" style="color: #555555;" height="20" width="20"  ></iconify-icon>
+                            <iconify-icon icon="mingcute:location-2-fill" style="color: #f1910e;" height="20" width="20"  ></iconify-icon>
                             <p class="font-medium text-gray-400 text-[0.8rem]" >Ibadan</p>
                         </div>
                         <div class="flex gap-2 justify-between items-center">
-                            <iconify-icon icon="mingcute:time-fill" style="color: #555555;" height="20" width="20"></iconify-icon>
-                            <p  class="font-medium text-gray-400 text-[0.8rem]">30 mins ago</p>
+                            <iconify-icon icon="mingcute:time-fill" style="color: #f1910e;" height="20" width="20"></iconify-icon>
+                            <p  class="font-medium text-gray-400 text-[0.8rem]">10 mins ago</p>
                         </div>
                     </div>
-                    
-                    <div class="pt-4 w-[30%]">  <input
-                        value="favorite-button"
-                        name="favorite-checkbox"
-                        id="favorite"
-                        checked="checked"
-                        type="checkbox"
-                      />
-                      <label class="container" for="favorite">
-                        <svg
-                          class="feather feather-heart"
-                          stroke-linejoin="round"
-                          stroke-linecap="round"
-                          stroke-width="2"
-                          stroke="currentColor"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          height="24"
-                          width="24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                          ></path>
-                        </svg>
-                        <div class="action">
-                          <span class="option-1 font-semibold">Save</span>
-                          <span class="option-2 font-semibold">Saved</span>
-                        </div>
-                      </label></div>
 
+                    <div class="pt-8">
+                        <button id="myButton" class="flex items-center gap-2 border-2 border-[#519341]  px-2 py-2 text-[#519341] rounded-md transition-colors duration-300 transform hover:scale-105 focus:outline-none">
+                            <iconify-icon icon="icon-park-solid:add-one" width="20" height="20"></iconify-icon>
+                            <p>Save</p>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="w-full h-[100vh] rounded-md p-4 shadow-lg ">
-                <div class="h-1/2 rounded-md" id="post-1">  </div>
-
+            <div id="recent-2" class="md:w-full w-[80%] ml-14 md:ml-0 lg:ml-0 h-[90vh] rounded-md p-4 shadow-md bg-white ">
+                <div class="h-1/2 rounded-md hover:backdrop-blur-sm" id="post-2"></div>
                 <div>
-                    <div class="py-4">
-                        <div class="px-4 py bg-[#519341] rounded-md w-[40%]">
-                            <p class="capitalize text-white font-medium">found</p>
-                        </div>
+                    <div class="py-2">
+                        <button class="px-2 py bg-[#519341] rounded-sm md:16">
+                            <p class="capitalize text-white text-[0.8rem] text-center font-medium">lost</p>
+                        </button>
                     </div>
-
+                    
                     <div class="">
-                        <h3 class="font-semibold text-[1.3rem]">
-                            Black Addidas daily Ii backpack
+                        <h3 class="font-semibold text-[1.2rem]">
+                            Dark blue HP Bang & Olufsen 
                         </h3>
                     </div>
 
                     <div class="flex gap-2 py-4 items-center">
-                        <iconify-icon icon="bxs:category-alt" style="color: #519341;" width="20" height="20"></iconify-icon>
-                        <p  class="font-medium text-gray-400">Bags/Backpack</p>
+                        <iconify-icon icon="bxs:category-alt" style="color: #f1910e;" width="20" height="20"></iconify-icon>
+                        <p  class="font-medium text-gray-400 text-[0.8rem]">Laptop/HP</p>
                     </div>
 
-                    <div class="flex justify-between justify-center items-center">
+                    <div class="flex justify-between items-center">
                         <div class="flex gap-2">
-                            <iconify-icon icon="mingcute:location-2-fill" style="color: #519341;" height="20" width="20"  ></iconify-icon>
-                            <p class="font-medium text-gray-400" >Ibadan</p>
+                            <iconify-icon icon="mingcute:location-2-fill" style="color: #f1910e;" height="20" width="20"  ></iconify-icon>
+                            <p class="font-medium text-gray-400 text-[0.8rem]" >Oyo</p>
                         </div>
-                        <div class="flex gap-2 justify-between justify-center items-center">
-                            <iconify-icon icon="mingcute:time-fill" style="color: #519341;" height="20" width="20"></iconify-icon>
-                            <p  class="font-medium text-gray-400">30 mins ago</p>
+                        <div class="flex gap-2 justify-between items-center">
+                            <iconify-icon icon="mingcute:time-fill" style="color: #f1910e;" height="20" width="20"></iconify-icon>
+                            <p  class="font-medium text-gray-400 text-[0.8rem]">10 mins ago</p>
                         </div>
                     </div>
 
-                    <div class="pt-4 w-[50%]">  <input
-                        value="favorite-button"
-                        name="favorite-checkbox"
-                        id="favorite"
-                        checked="checked"
-                        type="checkbox"
-                      />
-                      <label class="container" for="favorite">
-                        <svg
-                          class="feather feather-heart"
-                          stroke-linejoin="round"
-                          stroke-linecap="round"
-                          stroke-width="2"
-                          stroke="currentColor"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          height="24"
-                          width="24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                          ></path>
-                        </svg>
-                        <div class="action">
-                          <span class="option-1 font-semibold">Save</span>
-                          <span class="option-2 font-semibold">Saved</span>
-                        </div>
-                      </label></div>
-
+                    <div class="pt-8 relative">
+                        <button id="button-2" class="flex items-center gap-2 border-2 border-[#519341]  px-2 py-2 text-[#519341] rounded-md transition-colors duration-300 transform hover:scale-105 focus:outline-none">
+                            <iconify-icon icon="icon-park-solid:add-one" width="20" height="20"></iconify-icon>
+                            <p>Save</p>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="w-full h-[100vh] rounded-md p-4 shadow-lg ">
-                <div class="h-1/2 rounded-md" id="post-1">  </div>
-
+            <div id="recent-3" class="md:w-full w-[80%] ml-14 md:ml-0 lg:ml-0 h-[90vh] rounded-md p-4 shadow-lg bg-white ">
+                <div class="h-1/2 rounded-md" id="post-3"></div>
                 <div>
-                    <div class="py-4">
-                        <div class="px-4 py bg-[#519341] rounded-md w-[40%]">
-                            <p class="capitalize text-white font-medium">found</p>
-                        </div>
+                    <div class="py-2">
+                        <button class="px-2 py bg-[#519341] rounded-sm md:16">
+                            <p class="capitalize text-white text-[0.8rem] text-center font-medium">found</p>
+                        </button>
                     </div>
-
+                    
                     <div class="">
-                        <h3 class="font-semibold text-[1.3rem]">
-                            Black Addidas daily Ii backpack
+                        <h3 class="font-semibold text-[1.2rem]">
+                            Adult male golden retriever. 
                         </h3>
                     </div>
 
-                    <div class="flex gap-2 py-4 flex items-center">
-                        <iconify-icon icon="bxs:category-alt" style="color: #519341;" width="20" height="20"></iconify-icon>
-                        <p  class="font-medium text-gray-400">Bags/Backpack</p>
+                    <div class="flex gap-2 py-4 items-center">
+                        <iconify-icon icon="bxs:category-alt" style="color: #f1910e;" width="20" height="20"></iconify-icon>
+                        <p  class="font-medium text-gray-400 text-[0.8rem]">Pets/Dogs</p>
                     </div>
 
-                    <div class="flex justify-between justify-center items-center">
+                    <div class="flex justify-between items-center">
                         <div class="flex gap-2">
-                            <iconify-icon icon="mingcute:location-2-fill" style="color: #519341;" height="20" width="20"  ></iconify-icon>
-                            <p class="font-medium text-gray-400" >Ibadan</p>
+                            <iconify-icon icon="mingcute:location-2-fill" style="color: #f1910e;" height="20" width="20"  ></iconify-icon>
+                            <p class="font-medium text-gray-400 text-[0.8rem]" >Ogbomosho</p>
                         </div>
-                        <div class="flex gap-2  flex justify-between justify-center items-center">
-                            <iconify-icon icon="mingcute:time-fill" style="color: #519341;" height="20" width="20"></iconify-icon>
-                            <p  class="font-medium text-gray-400">30 mins ago</p>
+                        <div class="flex gap-2 justify-between items-center">
+                            <iconify-icon icon="mingcute:time-fill" style="color: #f1910e;" height="20" width="20"></iconify-icon>
+                            <p  class="font-medium text-gray-400 text-[0.8rem]">15 mins ago</p>
                         </div>
                     </div>
 
-                    <div class="pt-4 w-[50%]">  <input
-                        value="favorite-button"
-                        name="favorite-checkbox"
-                        id="favorite"
-                        checked="checked"
-                        type="checkbox"
-                      />
-                      <label class="container" for="favorite">
-                        <svg
-                          class="feather feather-heart"
-                          stroke-linejoin="round"
-                          stroke-linecap="round"
-                          stroke-width="2"
-                          stroke="currentColor"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          height="24"
-                          width="24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                          ></path>
-                        </svg>
-                        <div class="action">
-                          <span class="option-1 font-semibold">Save</span>
-                          <span class="option-2 font-semibold">Saved</span>
-                        </div>
-                      </label></div>
-
+                    <div class="pt-8">
+                        <button id="button-3" class="flex items-center gap-2 border-2 border-[#519341]  px-2 py-2 text-[#519341] rounded-md transition-colors duration-300 transform hover:scale-105 focus:outline-none">
+                            <iconify-icon icon="icon-park-solid:add-one" width="20" height="20"></iconify-icon>
+                            <p>Save</p>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="w-full h-[100vh] rounded-md p-4 shadow-lg ">
-                <div class="h-1/2 rounded-md" id="post-1">  </div>
-
+            <div id="recent-4" class="md:w-full w-[80%] ml-14 md:ml-0 lg:ml-0 h-[90vh] rounded-md p-4 shadow-lg bg-white ">
+                <div class="h-1/2 rounded-md hover:backdrop-blur-sm" id="post-4"></div>
                 <div>
-                    <div class="py-4">
-                        <div class="px-4 py bg-[#519341] rounded-md w-[40%]">
-                            <p class="capitalize text-white font-medium">found</p>
-                        </div>
+                    <div class="py-2">
+                        <button class="px-2 py bg-[#519341] rounded-sm md:16">
+                            <p class="capitalize text-white text-[0.8rem] text-center font-medium">found</p>
+                        </button>
                     </div>
-
+                    
                     <div class="">
-                        <h3 class="font-semibold text-[1.3rem]">
-                            Black Addidas daily Ii backpack
+                        <h3 class="font-semibold text-[1.2rem]">
+                        Golden necklace with pendant
                         </h3>
                     </div>
 
-                    <div class="flex gap-2 py-4 flex items-center">
-                        <iconify-icon icon="bxs:category-alt" style="color: #519341;" width="20" height="20"></iconify-icon>
-                        <p  class="font-medium text-gray-400">Bags/Backpack</p>
+                    <div class="flex gap-2 py-4 items-center">
+                        <iconify-icon icon="bxs:category-alt" style="color: #f1910e;" width="20" height="20"></iconify-icon>
+                        <p  class="font-medium text-gray-400 text-[0.8rem]">Jewelries/necklace</p>
                     </div>
 
-                    <div class="flex justify-between justify-center items-center">
+                    <div class="flex justify-between items-center">
                         <div class="flex gap-2">
-                            <iconify-icon icon="mingcute:location-2-fill" style="color: #519341;" height="20" width="20"  ></iconify-icon>
-                            <p class="font-medium text-gray-400" >Ibadan</p>
+                            <iconify-icon icon="mingcute:location-2-fill" style="color: #f1910e;" height="20" width="20"  ></iconify-icon>
+                            <p class="font-medium text-gray-400 text-[0.8rem]" >Ikeja</p>
                         </div>
-                        <div class="flex gap-2  flex justify-between justify-center items-center">
-                            <iconify-icon icon="mingcute:time-fill" style="color: #519341;" height="20" width="20"></iconify-icon>
-                            <p  class="font-medium text-gray-400">30 mins ago</p>
+                        <div class="flex gap-2 justify-between items-center">
+                            <iconify-icon icon="mingcute:time-fill" style="color: #f1910e;" height="20" width="20"></iconify-icon>
+                            <p  class="font-medium text-gray-400 text-[0.8rem]">31 mins ago</p>
                         </div>
                     </div>
 
-                    <div class="pt-4 w-[50%]">  <input
-                        value="favorite-button"
-                        name="favorite-checkbox"
-                        id="favorite"
-                        checked="checked"
-                        type="checkbox"
-                      />
-                      <label class="container" for="favorite">
-                        <svg
-                          class="feather feather-heart"
-                          stroke-linejoin="round"
-                          stroke-linecap="round"
-                          stroke-width="2"
-                          stroke="currentColor"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          height="24"
-                          width="24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                          ></path>
-                        </svg>
-                        <div class="action">
-                          <span class="option-1 font-semibold">Save</span>
-                          <span class="option-2 font-semibold">Saved</span>
-                        </div>
-                      </label></div>
-
+                    <div class="pt-8">
+                        <button id="button-4" class="flex items-center gap-2 border-2 border-[#519341]  px-2 py-2 text-[#519341] rounded-md transition-colors duration-300 transform hover:scale-105 focus:outline-none">
+                            <iconify-icon icon="icon-park-solid:add-one" width="20" height="20"></iconify-icon>
+                            <p>Save</p>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="w-full h-[100vh] rounded-md p-4 shadow-lg ">
-                <div class="h-1/2 rounded-md" id="post-1">  </div>
-
+            <div id="recent-5" class="md:w-full w-[80%] ml-14 md:ml-0 lg:ml-0 h-[90vh] rounded-md p-4 shadow-lg bg-white ">
+                <div class="h-1/2 rounded-md hover:backdrop-blur-sm" id="post-5"></div>
                 <div>
-                    <div class="py-4">
-                        <div class="px-4 py bg-[#519341] rounded-md w-[40%]">
-                            <p class="capitalize text-white font-medium">found</p>
-                        </div>
+                    <div class="py-2">
+                        <button class="px-2 py bg-[#519341] rounded-sm md:16">
+                            <p class="capitalize text-white text-[0.8rem] text-center font-medium">Lost</p>
+                        </button>
                     </div>
-
+                    
                     <div class="">
-                        <h3 class="font-semibold text-[1.3rem]">
-                            Black Addidas daily Ii backpack
+                        <h3 class="font-semibold text-[1.2rem]">
+                            Brown gucci card holder
                         </h3>
                     </div>
 
-                    <div class="flex gap-2 py-4 flex items-center">
-                        <iconify-icon icon="bxs:category-alt" style="color: #519341;" width="20" height="20"></iconify-icon>
-                        <p  class="font-medium text-gray-400">Bags/Backpack</p>
+                    <div class="flex gap-2 py-4 items-center">
+                        <iconify-icon icon="bxs:category-alt" style="color: #f1910e;" width="20" height="20"></iconify-icon>
+                        <p  class="font-medium text-gray-400 text-[0.8rem]">Bags/wallet</p>
                     </div>
 
-                    <div class="flex justify-between justify-center items-center">
+                    <div class="flex justify-between items-center">
                         <div class="flex gap-2">
-                            <iconify-icon icon="mingcute:location-2-fill" style="color: #519341;" height="20" width="20"  ></iconify-icon>
-                            <p class="font-medium text-gray-400" >Ibadan</p>
+                            <iconify-icon icon="mingcute:location-2-fill" style="color: #f1910e;" height="20" width="20"  ></iconify-icon>
+                            <p class="font-medium text-gray-400 text-[0.8rem]" >Ikeja</p>
                         </div>
-                        <div class="flex gap-2  flex justify-between justify-center items-center">
-                            <iconify-icon icon="mingcute:time-fill" style="color: #519341;" height="20" width="20"></iconify-icon>
-                            <p  class="font-medium text-gray-400">30 mins ago</p>
+                        <div class="flex gap-2 justify-between items-center">
+                            <iconify-icon icon="mingcute:time-fill" style="color: #f1910e;" height="20" width="20"></iconify-icon>
+                            <p  class="font-medium text-gray-400 text-[0.8rem]">45 mins ago</p>
                         </div>
                     </div>
 
-                    <div class="pt-4 w-[50%]">  <input
-                        value="favorite-button"
-                        name="favorite-checkbox"
-                        id="favorite"
-                        checked="checked"
-                        type="checkbox"
-                      />
-                      <label class="container" for="favorite">
-                        <svg
-                          class="feather feather-heart"
-                          stroke-linejoin="round"
-                          stroke-linecap="round"
-                          stroke-width="2"
-                          stroke="currentColor"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          height="24"
-                          width="24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                          ></path>
-                        </svg>
-                        <div class="action">
-                          <span class="option-1 font-semibold">Save</span>
-                          <span class="option-2 font-semibold">Saved</span>
-                        </div>
-                      </label></div>
-
+                    <div class="pt-8">
+                        <button id="button-5" class="flex items-center gap-2 border-2 border-[#519341]  px-2 py-2 text-[#519341] rounded-md transition-colors duration-300 transform hover:scale-105 focus:outline-none">
+                            <iconify-icon icon="icon-park-solid:add-one" width="20" height="20"></iconify-icon>
+                            <p>Save</p>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="w-full h-[100vh] rounded-md p-4 shadow-lg ">
-                <div class="h-1/2 rounded-md" id="post-1">  </div>
-
+            <div id="recent-6" class="md:w-full w-[80%] ml-14 md:ml-0 lg:ml-0 h-[90vh] rounded-md p-4 shadow-lg bg-white ">
+                <div class="h-1/2 rounded-md hover:backdrop-blur-sm" id="post-6"></div>
                 <div>
-                    <div class="py-4">
-                        <div class="px-4 py bg-[#519341] rounded-md w-[40%]">
-                            <p class="capitalize text-white font-medium">found</p>
-                        </div>
+                    <div class="py-2">
+                        <button class="px-2 py bg-[#519341] rounded-sm md:16">
+                            <p class="capitalize text-white text-[0.8rem] text-center font-medium">Lost</p>
+                        </button>
                     </div>
-
+                    
                     <div class="">
-                        <h3 class="font-semibold text-[1.3rem]">
-                            Black Addidas daily Ii backpack
+                        <h3 class="font-semibold text-[1.2rem]">
+                            White handbag
                         </h3>
                     </div>
 
-                    <div class="flex gap-2 py-4 flex items-center">
-                        <iconify-icon icon="bxs:category-alt" style="color: #519341;" width="20" height="20"></iconify-icon>
-                        <p  class="font-medium text-gray-400">Bags/Backpack</p>
+                    <div class="flex gap-2 py-4 items-center">
+                        <iconify-icon icon="bxs:category-alt" style="color: #f1910e;" width="20" height="20"></iconify-icon>
+                        <p  class="font-medium text-gray-400 text-[0.8rem]">Bags/Handbag</p>
                     </div>
 
-                    <div class="flex justify-between justify-center items-center">
+                    <div class="flex justify-between items-center">
                         <div class="flex gap-2">
-                            <iconify-icon icon="mingcute:location-2-fill" style="color: #519341;" height="20" width="20"  ></iconify-icon>
-                            <p class="font-medium text-gray-400" >Ibadan</p>
+                            <iconify-icon icon="mingcute:location-2-fill" style="color: #f1910e;" height="20" width="20"  ></iconify-icon>
+                            <p class="font-medium text-gray-400 text-[0.8rem]" >Port Harcout</p>
                         </div>
-                        <div class="flex gap-2  flex justify-between justify-center items-center">
-                            <iconify-icon icon="mingcute:time-fill" style="color: #519341;" height="20" width="20"></iconify-icon>
-                            <p  class="font-medium text-gray-400">30 mins ago</p>
+                        <div class="flex gap-2 justify-between items-center">
+                            <iconify-icon icon="mingcute:time-fill" style="color: #f1910e;" height="20" width="20"></iconify-icon>
+                            <p  class="font-medium text-gray-400 text-[0.8rem]">55 mins ago</p>
                         </div>
                     </div>
 
-                    <div class="pt-4 w-[50%]">  <input
-                        value="favorite-button"
-                        name="favorite-checkbox"
-                        id="favorite"
-                        checked="checked"
-                        type="checkbox"
-                      />
-                      <label class="container" for="favorite">
-                        <svg
-                          class="feather feather-heart"
-                          stroke-linejoin="round"
-                          stroke-linecap="round"
-                          stroke-width="2"
-                          stroke="currentColor"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          height="24"
-                          width="24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                          ></path>
-                        </svg>
-                        <div class="action">
-                          <span class="option-1 font-semibold">Save</span>
-                          <span class="option-2 font-semibold">Saved</span>
-                        </div>
-                      </label></div>
-
+                    <div class="pt-8">
+                        <button id="button-6" class="flex items-center gap-2 border-2 border-[#519341]  px-2 py-2 text-[#519341] rounded-md transition-colors duration-300 transform hover:scale-105 focus:outline-none">
+                            <iconify-icon icon="icon-park-solid:add-one" width="20" height="20"></iconify-icon>
+                            <p>Save</p>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="w-full h-[100vh] rounded-md p-4 shadow-lg ">
-                <div class="h-1/2 rounded-md" id="post-1">  </div>
-
+            <div id="recent-7" class="md:w-full w-[80%] ml-14 md:ml-0 lg:ml-0 h-[90vh] rounded-md p-4 shadow-lg bg-white ">
+                <div class="h-1/2 rounded-md hover:backdrop-blur-sm" id="post-7"></div>
                 <div>
-                    <div class="py-4">
-                        <div class="px-4 py bg-[#519341] rounded-md w-[40%]">
-                            <p class="capitalize text-white font-medium">found</p>
-                        </div>
+                    <div class="py-2">
+                        <button class="px-2 py bg-[#519341] rounded-sm md:16">
+                            <p class="capitalize text-white text-[0.8rem] text-center font-medium">Lost</p>
+                        </button>
                     </div>
-
+                    
                     <div class="">
-                        <h3 class="font-semibold text-[1.3rem]">
-                            Black Addidas daily Ii backpack
+                        <h3 class="font-semibold text-[1.2rem]">
+                            American curl pussy cat
                         </h3>
                     </div>
 
-                    <div class="flex gap-2 py-4 flex items-center">
-                        <iconify-icon icon="bxs:category-alt" style="color: #519341;" width="20" height="20"></iconify-icon>
-                        <p  class="font-medium text-gray-400">Bags/Backpack</p>
+                    <div class="flex gap-2 py-4 items-center">
+                        <iconify-icon icon="bxs:category-alt" style="color: #f1910e;" width="20" height="20"></iconify-icon>
+                        <p  class="font-medium text-gray-400 text-[0.8rem]">Pets/Cat</p>
                     </div>
 
-                    <div class="flex justify-between justify-center items-center">
+                    <div class="flex justify-between items-center">
                         <div class="flex gap-2">
-                            <iconify-icon icon="mingcute:location-2-fill" style="color: #519341;" height="20" width="20"  ></iconify-icon>
-                            <p class="font-medium text-gray-400" >Ibadan</p>
+                            <iconify-icon icon="mingcute:location-2-fill" style="color: #f1910e;" height="20" width="20"  ></iconify-icon>
+                            <p class="font-medium text-gray-400 text-[0.8rem]">Delta</p>
                         </div>
-                        <div class="flex gap-2  flex justify-between justify-center items-center">
-                            <iconify-icon icon="mingcute:time-fill" style="color: #519341;" height="20" width="20"></iconify-icon>
-                            <p  class="font-medium text-gray-400">30 mins ago</p>
+                        <div class="flex gap-2 justify-between items-center">
+                            <iconify-icon icon="mingcute:time-fill" style="color: #f1910e;" height="20" width="20"></iconify-icon>
+                            <p  class="font-medium text-gray-400 text-[0.8rem]">1 hour ago</p>
                         </div>
                     </div>
 
-                    <div class="pt-4 w-[50%]">  <input
-                        value="favorite-button"
-                        name="favorite-checkbox"
-                        id="favorite"
-                        checked="checked"
-                        type="checkbox"
-                      />
-                      <label class="container" for="favorite">
-                        <svg
-                          class="feather feather-heart"
-                          stroke-linejoin="round"
-                          stroke-linecap="round"
-                          stroke-width="2"
-                          stroke="currentColor"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          height="24"
-                          width="24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                          ></path>
-                        </svg>
-                        <div class="action">
-                          <span class="option-1 font-semibold">Save</span>
-                          <span class="option-2 font-semibold">Saved</span>
-                        </div>
-                      </label></div>
-
+                    <div class="pt-8">
+                        <button id="button-5" class="flex items-center gap-2 border-2 border-[#519341]  px-2 py-2 text-[#519341] rounded-md transition-colors duration-300 transform hover:scale-105 focus:outline-none">
+                            <iconify-icon icon="icon-park-solid:add-one" width="20" height="20"></iconify-icon>
+                            <p>Save</p>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="w-full h-[100vh] rounded-md p-4 shadow-lg ">
-                <div class="h-1/2 rounded-md" id="post-1">  </div>
-
+            <div id="recent-8" class="md:w-full w-[80%] ml-14 md:ml-0 lg:ml-0 h-[90vh] rounded-md p-4 shadow-lg bg-white ">
+                <div class="h-1/2 rounded-md hover:backdrop-blur-sm" id="post-8"></div>
                 <div>
-                    <div class="py-4">
-                        <div class="px-4 py bg-[#519341] rounded-md w-[40%]">
-                            <p class="capitalize text-white font-medium">found</p>
-                        </div>
+                    <div class="py-2">
+                        <button class="px-2 py bg-[#519341] rounded-sm md:16">
+                            <p class="capitalize text-white text-[0.8rem] text-center font-medium">Found</p>
+                        </button>
                     </div>
-
+                    
                     <div class="">
-                        <h3 class="font-semibold text-[1.3rem]">
-                            Black Addidas daily Ii backpack
+                        <h3 class="font-semibold text-[1.2rem] leading-5">
+                            Iphone Xs-Max with yelllow phone case
                         </h3>
                     </div>
 
-                    <div class="flex gap-2 py-4 flex items-center">
-                        <iconify-icon icon="bxs:category-alt" style="color: #519341;" width="20" height="20"></iconify-icon>
-                        <p  class="font-medium text-gray-400">Bags/Backpack</p>
+                    <div class="flex gap-2 py-4 items-center">
+                        <iconify-icon icon="bxs:category-alt" style="color: #f1910e;" width="20" height="20"></iconify-icon>
+                        <p  class="font-medium text-gray-400 text-[0.8rem]">Phone/Iphone</p>
                     </div>
 
-                    <div class="flex justify-between justify-center items-center">
+                    <div class="flex justify-between items-center">
                         <div class="flex gap-2">
-                            <iconify-icon icon="mingcute:location-2-fill" style="color: #519341;" height="20" width="20"  ></iconify-icon>
-                            <p class="font-medium text-gray-400" >Ibadan</p>
+                            <iconify-icon icon="mingcute:location-2-fill" style="color: #f1910e;" height="20" width="20"  ></iconify-icon>
+                            <p class="font-medium text-gray-400 text-[0.8rem]">Ibadan</p>
                         </div>
-                        <div class="flex gap-2  flex justify-between justify-center items-center">
-                            <iconify-icon icon="mingcute:time-fill" style="color: #519341;" height="20" width="20"></iconify-icon>
-                            <p  class="font-medium text-gray-400">30 mins ago</p>
+                        <div class="flex gap-2 justify-between items-center">
+                            <iconify-icon icon="mingcute:time-fill" style="color: #f1910e;" height="20" width="20"></iconify-icon>
+                            <p  class="font-medium text-gray-400 text-[0.8rem]">3 hours ago</p>
                         </div>
                     </div>
 
-                    <div class="pt-4 w-[50%]">  <input
-                        value="favorite-button"
-                        name="favorite-checkbox"
-                        id="favorite"
-                        checked="checked"
-                        type="checkbox"
-                      />
-                      <label class="container" for="favorite">
-                        <svg
-                          class="feather feather-heart"
-                          stroke-linejoin="round"
-                          stroke-linecap="round"
-                          stroke-width="2"
-                          stroke="currentColor"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          height="24"
-                          width="24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                          ></path>
-                        </svg>
-                        <div class="action">
-                          <span class="option-1 font-semibold">Save</span>
-                          <span class="option-2 font-semibold">Saved</span>
-                        </div>
-                      </label></div>
-
+                    <div class="pt-8">
+                        <button id="button-5" class="flex items-center gap-2 border-2 border-[#519341]  px-2 py-2 text-[#519341] rounded-md transition-colors duration-300 transform hover:scale-105 focus:outline-none">
+                            <iconify-icon icon="icon-park-solid:add-one" width="20" height="20"></iconify-icon>
+                            <p>Save</p>
+                        </button>
+                    </div>
                 </div>
             </div>
-
         </div>
-    </section>
+</section>
 
-    <section id="categories" class="px-10 lg:px-16 py-4">
-       <div class="flex justify-between py-4 justify-center items-center ">
-          <div class=" items-center justify-center">
-            <h3 class="font-bold text-[1.4rem] md:text-[1.75rem] capitalize">browse by category</h3>
-            <hr class="border-2 rounded-full w-14 my-2 border-[#834193]">
-          </div>
-
-          <div class="flex gap-2 font-medium text-[1rem] text-gray-600 capitalize justify-center items-center">
-            <div>
-                <p>view more</p>
+<section id="categories" class="px-10 lg:px-16 py-4 ">
+        <div class="flex justify-between py-4  items-center ">
+            <div class=" items-center justify-center">
+                <h3 class="font-bold text-[1.4rem] md:text-[1.75rem] capitalize">browse by category</h3>
+                <hr class="border-2 rounded-full w-14 my-2 border-[#834193]">
             </div>
-            <div class="flex items-center justify-center">
-                <iconify-icon icon="ep:menu" style="color: rgb(85, 85, 85);" width="30" height="30"></iconify-icon>
+            
+            <div class="flex gap-2 font-medium text-[1rem] text-gray-600 capitalize justify-center items-center">
+                <div>
+                    <p>view more</p>
+                </div>
+                <div class="flex items-center justify-center">
+                    <iconify-icon icon="ep:menu" style="color: rgb(85, 85, 85);" width="30" height="30"></iconify-icon>
+                </div>
             </div>
-          </div>
-       </div>
+        </div>
 
         <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 border-2">
             <div class=" h-[30vh] flex flex-col justify-center items-center  border border-gray-400">
-              
                 <div class="w-16 h-16 rounded-full bg-blue-400 flex justify-center items-center
-                transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500 ">
+                    transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500 ">
                     <iconify-icon icon="emojione:mobile-phone" width="40" height="40"></iconify-icon>
                 </div>
                 <div class="mt-4">
                     <p class="text-[1.08] font-medium text-gray-700 capitalize ">phone</p>
                 </div>
-               
             </div>
-
+            
             <div class=" h-[30vh] flex flex-col justify-center items-center border border-gray-400">
                 <div class="w-16 h-16 rounded-full bg-indigo-400 flex justify-center items-center  transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500">
                     <iconify-icon icon="emojione:dog"  width="35" height="35"></iconify-icon>
@@ -748,7 +566,7 @@
 
             <div class=" h-[30vh] flex flex-col justify-center items-center border border-gray-400">
                 <div class="w-16 h-16 rounded-full bg-[#519341] flex justify-center items-center
-                transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500">
+                    transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500">
                     <iconify-icon icon="fxemoji:handbag" width="35" height="35"></iconify-icon>
                 </div>
                 <div class="mt-4">
@@ -812,7 +630,7 @@
                 </div>
             </div>
             <div class=" h-[30vh] flex flex-col justify-center items-center border border-gray-400">
-                <div class="w-16 h-16 rounded-full bg-amber-400 flex justify-center items-center
+                <div class="w-16 h-16 rounded-full bg-amber-400 flex justify-center items-center mt-5
                 transition ease-in-out delay-75  hover:-translate-y-2 hover:scale-110 hover:bg-[#834193] duration-500">
                     <iconify-icon icon="noto:coat"  width="40" height="40"></iconify-icon>
                 </div>
@@ -841,69 +659,75 @@
         </div>
     </section>
 
-    <section id="information-not-shared" class="py-6 bg-[#519341] px-8 lg:px-0 py-4">
+<section id="information-not-shared" class=" bg-[#519341] px-8 lg:px-0 py-4">
         <div class="flex flex-col lg:justify-center lg:items-center lg:flex-row gap-4">
             <div>
                 <p class="text-white font-medium text-[2rem] lg:w-[80%]">Your personal information will not be disclosed with anyone.</p>
             </div>
             <div>
+                <!-- <button class="btn-12 text-black hover:text-white"><span>read more</span></button> -->
+
                 <button class="py-2 px-10 rounded-full bg-white shadow-md uppercase text-[1rem] text ">read more</button>
             </div>
         </div>
-    </section>
+</section>
 
-    <section>
+<section  class="pt-4 pb-2 lg:px-16 px-10">
+    <div class=" items-center justify-center py-4">
+        <h3 class="font-bold text-[1.4rem] md:text-[1.75rem] capitalize">industries serviced</h3>
+        <hr class="border-2 rounded-full w-14 my-2 border-[#834193]">
+    </div>
         <div class="grid grid-cols-2 lg:grid-cols-4 ">
-            <div class="h-[30vh] w-full  flex flex-col gap-2 justify-center items-center">
-                <div class="border-2 rounded-md w-32 h-32 flex justify-center items-center">
+            <div class="h-[30vh] w-full  flex flex-col gap-2 justify-center items-center py-4">
+                <div class="border-2 border-gray-300 rounded-md w-32 h-32 flex justify-center items-center">
                     <iconify-icon icon="noto:airplane-departure" width="100" height="100"></iconify-icon>
                 </div>
-                <div class="w-[30%]">
-                    <p class="text-[1.08] font-medium text-gray-700 capitalize text-center">airport lost and found</p>
+                <div class="w-[58%] md:w-[30%]">
+                    <p class="text-[1.08] font-medium text-gray-800 capitalize text-center">airport lost and found</p>
                 </div>
             </div>
-            <div class="h-[30vh] w-full  flex flex-col gap-2 justify-center items-center">
-                <div class="border-2 rounded-md w-32 h-32 flex justify-center items-center">
+            <div class="h-[30vh] w-full  flex flex-col gap-2 justify-center items-center py-4">
+                <div class="border-2 border-gray-300 rounded-md w-32 h-32 flex justify-center items-center">
                     <iconify-icon icon="twemoji:hotel" width="80" height="80"></iconify-icon>
                 </div>
-                <div class="w-[30%]">
+                <div class="w-[58%] md:w-[30%]">
                     <p class="text-[1.08] font-medium text-gray-700 capitalize text-center">hotel lost and found</p>
                 </div>
             </div>
-            <div class="h-[30vh] w-full  flex flex-col gap-2 justify-center items-center">
-                <div class="border-2 rounded-md w-32 h-32 flex justify-center items-center">
+            <div class="h-[30vh] w-full  flex flex-col gap-2 justify-center items-center py-4">
+                <div class="border-2 border-gray-300 rounded-md w-32 h-32 flex justify-center items-center">
                     <iconify-icon icon="noto:oncoming-taxi" width="80" height="80"></iconify-icon>
                 </div>
-                <div class="w-[28%]">
+                <div class="w-[58%] md:w-[28%]">
                     <p class="text-[1.08] font-medium text-gray-700 capitalize text-center">taxi lost and found</p>
                 </div>
             </div>
-            <div class="h-[30vh] w-full  flex flex-col gap-2 justify-center items-center">
-                <div class="border-2 rounded-md w-32 h-32 flex justify-center items-center">
+            <div class="h-[30vh] w-full  flex flex-col gap-2 justify-center items-center py-4">
+                <div class="border-2 border-gray-300 rounded-md w-32 h-32 flex justify-center items-center">
                     <iconify-icon icon="emojione-v1:school"  width="80" height="80"></iconify-icon>
                 </div>
-                <div class="md:w-[30%]">
+                <div class="w-[58%] md:w-[30%]">
                     <p class="text-[1.08] font-medium text-gray-700 capitalize text-center">school lost and found</p>
                 </div>
             </div>
-            <div class="h-[30vh] w-full  flex flex-col gap-2 justify-center items-center">
-                <div class="border-2 rounded-md w-32 h-32 flex justify-center items-center">
+            <div class="h-[30vh] w-full  flex flex-col gap-2 justify-center items-center py-2">
+                <div class="border-2 border-gray-300 rounded-md w-32 h-32 flex justify-center items-center">
                     <iconify-icon icon="emojione-v1:stadium" width="80" height="80"></iconify-icon>
                 </div>
-                <div class="w-[30%]">
+                <div class="w-[58%] md:w-[30%]">
                     <p class="text-[1.08] font-medium text-gray-700 capitalize text-center">venue lost and found</p>
                 </div>
             </div>
-            <div class="h-[30vh] w-full  flex flex-col gap-2 justify-center items-center">
-                <div class="border-2 rounded-md w-32 h-32 flex justify-center items-center">
+            <div class="h-[30vh] w-full  flex flex-col gap-2 justify-center items-center py-2">
+                <div class="border-2 border-gray-300 rounded-md w-32 h-32 flex justify-center items-center">
                     <img width="80" height="80" src="https://img.icons8.com/color/80/ground-transportation.png" alt="ground-transportation"/>
                 </div>
-                <div class="w-[58%] md:w-[40%]">
+                <div class=" md:w-[40%]">
                     <p class="text-[1.08] font-medium text-gray-700 capitalize text-center">public transit lost and found</p>
                 </div>
             </div>
             <div class="h-[30vh] w-full  flex flex-col gap-2 justify-center items-center">
-                <div class="border-2 rounded-md w-32 h-32 flex justify-center items-center">
+                <div class="border-2 border-gray-300 rounded-md w-32 h-32 flex justify-center items-center">
                     <img width="80" height="80"  src="https://img.icons8.com/external-flat-icons-pack-pongsakorn-tan/64/external-bar-nightlife-flat-icons-pack-pongsakorn-tan.png" alt="external-bar-nightlife-flat-icons-pack-pongsakorn-tan"/>
                 </div>
                 <div class="w-[58%] md:w-[40%]">
@@ -911,7 +735,7 @@
                 </div>
             </div>
             <div class="h-[30vh] w-full  flex flex-col gap-2 justify-center items-center">
-                <div class="border-2 rounded-md w-32 h-32 flex justify-center items-center">
+                <div class="border-2 border-gray-300 rounded-md w-32 h-32 flex justify-center items-center">
                     <img width="80" height="80" src="https://img.icons8.com/color/48/stall.png" alt="stall"/>
                 </div>
                 <div class="w-[58%] md:w-[40%]">
@@ -919,7 +743,7 @@
                 </div>
             </div>
         </div>
-    </section>
+</section>
     <section id="post-an-ad" class="py-10 px-10 lg:px-16">
         <div>
             <h2 class="font-bold text-[1.4rem] md:text-[1.75rem] capitalize">How to post the Ad?</h2>
@@ -982,11 +806,18 @@
             </div>
          </div>
     </section>
+    
+    <div id="scrollup"  class="fixed right-6 bottom-6 hidden ">
+        <button id="scrollToTop" class="rounded-full bg-[#834193] p-3 flex items-center justify-center">
+            <iconify-icon icon="mingcute:arrow-up-fill" style="color: white;" width="25" height="25"></iconify-icon>
+            
+        </button>
+    </div>
 
-    <footer class="bg-[#519341] text-white w-[100%]  py-12 lg:h-[60vh]">
+    <footer class="bg-[#519341] text-white w-[100%]  py-12 lg:h-[70vh]">
         <div class="flex flex-col lg:flex-row justify-around px-12 lg:px-0 gap-6">
             <div>
-                <h3 class="font-semibold text-[1.1rem] capitalize">company</h3>
+                <h3 class="font-semibold text-[1.1rem] py-2 capitalize">company</h3>
                 <ul class="capitalize font-light flex flex-col gap-2">
                     <li><a href="aboutus.html">about us</a></li>
                     <li><a href="contactus.html">contact us</a></li>
@@ -997,22 +828,24 @@
             </div>
 
             <div>
-                <h3 class="font-semibold text-[1.1rem] capitalize">resources</h3>
+                <h3 class="font-semibold text-[1.1rem] capitalize py-2">resources</h3>
                 <ul class="capitalize font-light flex flex-col gap-2">
                     <li><a href="">FAQ</a></li>
                     <li><a href="">blog</a></li>
                     <li><a href="">terms</a></li>
+                    <li><a href="">legal</a></li>
                     <li><a href="">privacy policy</a></li>
                 </ul>
             </div>
 
             <div>
-                <h3 class="font-semibold text-[1.1rem] capitalize">quick links</h3>
+                <h3 class="font-semibold text-[1.1rem] py-2 capitalize">quick links</h3>
                 <ul class="capitalize font-light flex flex-col gap-2">
                     <li><a href="">log in</a></li>
                     <li><a href="">sign in</a></li>
                     <li><a href="index.html">home</a></li>
                     <li><a href="">search</a></li>
+                    <li><a href="">post an ad</a></li>
                     <li><a href="">report lost</a></li>
                     <li><a href="">report found</a></li>
                 </ul>

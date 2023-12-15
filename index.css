@@ -21,7 +21,7 @@ nav {
   animation: moveLeft is 1s linear forwards;
  } */
 
- @keyframes moveleft {
+ /* @keyframes moveleft {
   0% {
    transform: translateX(0);
   }
@@ -39,7 +39,7 @@ nav {
   100% {
    transform: translateX(200%);
   }
-}
+} */
 
 .animate-move-right {
   animation: moveRight is 1s linear forwards;
@@ -47,7 +47,7 @@ nav {
 
 
 #slider-img-1{
-    background-image: url(images/sample_slider.jpg);
+    background-image: url(images/img-slider-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -88,82 +88,67 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.container {
-    background-color: #834193;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 10px 15px 10px 10px;
-    cursor: pointer;
-    user-select: none;
-    border-radius: 10px;
-    box-shadow: rgba(46, 46, 46, 0.2) 0px 8px 24px;
-    color: rgb(255, 255, 255);
-  }
+/* #post-1 {
+  overflow: hidden;
+}
+
+#post-1 {
+  transition: transform 0.5s ease;
+}
+
+#post-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); /* Adjust colors as needed */
+  /* opacity: 0;
+  transition: opacity 0.5s ease;
+} 
+
+ #post-1:hover .image {
+  transform: scale(1.1); 
+}
+
   
-  #favorite {
-    display: none;
-  }
-  
-  #favorite:checked + .container svg {
-    fill: hsl(0deg 100% 50%);
-    stroke: hsl(0deg 100% 50%);
-    animation: heartButton 1s;
-  }
-  
-  @keyframes heartButton {
-    0% {
-      transform: scale(1);
-    }
-  
-    25% {
-      transform: scale(1.3);
-    }
-  
-    50% {
-      transform: scale(1);
-    }
-  
-    75% {
-      transform: scale(1.3);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  #favorite + .container .action {
-    position: relative;
-    overflow: hidden;
-    display: grid;
-  }
-  
-  #favorite + .container .action span {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    transition: all 0.5s;
-  }
-  
-  #favorite + .container .action span.option-1 {
-    transform: translate(0px, 0%);
-    opacity: 1;
-  }
-  
-  #favorite:checked + .container .action span.option-1 {
-    transform: translate(0px, -100%);
-    opacity: 0;
-  }
-  
-  #favorite + .container .action span.option-2 {
-    transform: translate(0px, 100%);
-    opacity: 0;
-  }
-  
-  #favorite:checked + .container .action span.option-2 {
-    transform: translate(0px, 0%);
-    opacity: 1;
-  }
-  
+#post-1:hover::before {
+  opacity: 1; */
+/* }  */
+
+#post-2{
+    background-image: url(images/Hp-lp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#post-3{
+    background-image: url(images/post-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#post-4{
+    background-image: url(images/pendant.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#post-5{
+    background-image: url(images/card-holder.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#post-6{
+    background-image: url(images/white-handbag.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#post-7{
+    background-image: url(images/pet-cat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#post-8{
+    background-image: url(images/iphone-xsmax.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

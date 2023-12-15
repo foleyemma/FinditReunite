@@ -104,8 +104,28 @@ function changeSlider() {
       currentSlider.classList.remove("hidden")
       changeSlider(); // Recursively call changeSlider after 5 seconds
     }, 500); // Adjust this timing to match the animation duration
-  }, 500000);
+  }, 5000);
 }
+
+const scrollButton = document.querySelector("#scrollup");
+
+function toggleScrollButton() {
+  if (window.scrollY > 0) {
+    scrollButton.classList.remove('hidden');
+  } else {
+    scrollButton.classList.add('hidden');
+  }
+}
+
+const scrollToTopButton = document.querySelector ('#scrollToTop')
+
+ scrollToTopButton.addEventListener('click', function (){
+    window.scrollTo({
+        top: "0", behavior: 'smooth'
+    })
+ })
+
+
 
 const navTogglerButton = document.querySelector ('#nav-toggler')
 
@@ -121,3 +141,36 @@ navTogglerButton.addEventListener('click', function () {
     closeMenuIcon.classList.toggle('hidden')
     mainMenu.classList.toggle('hidden')
 })
+
+const myButton = document.getElementById('myButton');
+
+const Button2 = document.getElementById('button-2');
+const Button3 = document.getElementById('button-3');
+const Button4 = document.getElementById('button-4');
+const Button5 = document.getElementById('button-5');
+const Button6 = document.getElementById('button-6');
+const Button7 = document.getElementById('button-7');
+const Button8 = document.getElementById('button-8');
+const Button9 = document.getElementById('button-9');
+
+
+
+myButton.addEventListener('click', function() {
+  myButton.classList.toggle('bg-[#519341]');
+  myButton.classList.toggle('border-2');
+  myButton.classList.toggle('text-white');
+
+});
+
+Button2.addEventListener('click', function() {
+  Button2.classList.toggle('bg-[#519341]');
+  Button2.classList.toggle('border-2');
+  Button2.classList.toggle('text-white');
+
+});
+Button3.addEventListener('click', function() {
+  Button3.classList.toggle('bg-[#519341]');
+  Button3.classList.toggle('border-2');
+  Button3.classList.toggle('text-white');
+
+});
